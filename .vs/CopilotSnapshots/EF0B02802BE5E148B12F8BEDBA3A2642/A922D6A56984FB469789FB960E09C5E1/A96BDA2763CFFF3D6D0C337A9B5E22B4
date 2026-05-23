@@ -1,0 +1,46 @@
+﻿using ApiApp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace ApiApp.Data.Configurations
+{
+    public class EventConfiguration : IEntityTypeConfiguration<Event>
+    {
+        public void Configure(EntityTypeBuilder<Event> builder)
+        {
+            builder.HasKey(e => e.Id);
+
+            builder.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(150);
+
+            builder.Property(e => e.Description)
+                .HasMaxLength(500);
+
+            builder.Property(e => e.Date)
+                .IsRequired();
+
+            builder.Property(e => e.Location)
+                .IsRequired()
+                .HasMaxLength(200);
+
+            builder.Property(e => e.BannerImageUrl)
+                .HasMaxLength(500);
+
+            builder.HasOne(e => e.Organizer)
+                .WithMany(o => o.Events)
+                .HasForeignKey(e => e.OrganizerId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasMany(e => e.Tickets)
+                .WithOne(t => t.Event)
+                .HasForeignKey(t => t.EventId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasData(
+                new Event { Id = 1, Title = "Tech Conference 2024", Description = "A great tech conference.", Date = new DateTime(2024, 10, 15, 9, 0, 0), Location = "New York", OrganizerId = 1 },
+                new Event { Id = 2, Title = "Rock Festival", Description = "An energetic rock festival.", Date = new DateTime(2024, 8, 20, 18, 0, 0), Location = "Los Angeles", OrganizerId = 2 }
+            );
+        }
+    }
+}

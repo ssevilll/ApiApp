@@ -1,0 +1,59 @@
+﻿using ApiApp.Interfaces;
+
+namespace ApiApp.Services
+{
+    public class FileService : IFileService
+    {
+        private readonly IWebHostEnvironment _env;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        public FileService(IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor)
+        {
+            _env = env;
+            _httpContextAccessor = httpContextAccessor;
+        }
+
+        private string WebRootPath
+        {
+            get
+            {
+                var path = _env.WebRootPath
+                           ?? Path.Combine(_env.ContentRootPath, "wwwroot");
+                Directory.CreateDirectory(path);
+                return path;
+            }
+        }
+
+        public async Task<string> SaveFileAsync(IFormFile file, string folder)
+        {
+            var uploadsFolder = Path.Combine(WebRootPath, "uploads", folder);
+            Directory.CreateDirectory(uploadsFolder);
+
+            var ext = Path.GetExtension(file.FileName);
+            var uniqueFileName = $"{Guid.NewGuid()}{ext}";
+            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+            using var stream = new FileStream(filePath, FileMode.Create);
+            await file.CopyToAsync(stream);
+
+            return $"uploads/{folder}/{uniqueFileName}";
+        }
+
+        public void DeleteFile(string? fileUrl)
+        {
+            if (string.IsNullOrEmpty(fileUrl)) return;
+
+            var request = _httpContextAccessor.HttpContext?.Request;
+            if (request != null)
+            {
+                var baseUrl = $"{request.Scheme}://{request.Host}{request.PathBase}";
+                if (fileUrl.StartsWith(baseUrl))
+                    fileUrl = fileUrl[baseUrl.Length..];
+            }
+
+            var fullPath = Path.Combine(WebRootPath, fileUrl.TrimStart('/').Replace('/', Path.DirectorySeparatorChar));
+            if (File.Exists(fullPath))
+                File.Delete(fullPath);
+        }
+    }
+}

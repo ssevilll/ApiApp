@@ -1,0 +1,31 @@
+﻿using ApiApp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace ApiApp.Data.Configurations
+{
+    public class TicketConfiguration : IEntityTypeConfiguration<Ticket>
+    {
+        public void Configure(EntityTypeBuilder<Ticket> builder)
+        {
+            builder.HasKey(t => t.Id);
+
+            builder.Property(t => t.Type)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder.Property(t => t.Price)
+                .IsRequired()
+                .HasColumnType("decimal(18,2)");
+
+            builder.Property(t => t.QuantityAvailable)
+                .IsRequired();
+
+            builder.HasData(
+                new Ticket { Id = 1, EventId = 1, Type = "General Admission", Price = 99.99m, QuantityAvailable = 500 },
+                new Ticket { Id = 2, EventId = 1, Type = "VIP", Price = 199.99m, QuantityAvailable = 100 },
+                new Ticket { Id = 3, EventId = 2, Type = "Standard", Price = 50.00m, QuantityAvailable = 1000 }
+            );
+        }
+    }
+}

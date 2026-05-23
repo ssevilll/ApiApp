@@ -1,0 +1,33 @@
+﻿using ApiApp.DTOs.EventDtos;
+using ApiApp.DTOs.OrganizerDtos;
+using ApiApp.DTOs.TicketDtos;
+using ApiApp.Models;
+
+namespace ApiApp.Profile
+{
+    public class MappingProfile : AutoMapper.Profile
+    {
+        public MappingProfile()
+        {
+            // Event mappings
+            CreateMap<EventCreateDto, Event>();
+            CreateMap<EventUpdateDto, Event>();
+            CreateMap<Event, EventResponseDto>()
+                .ForMember(dest=>dest.BannerImageUrl, opt=> opt.MapFrom(src => src.BannerImageUrl))
+                .ForMember(dest => dest.OrganizerName,
+                           opt => opt.MapFrom(src => src.Organizer != null ? src.Organizer.Name : string.Empty));
+
+            // Organizer mappings
+            CreateMap<OrganizerCreateDto, Organizer>();
+            CreateMap<OrganizerUpdateDto, Organizer>();
+            CreateMap<Organizer, OrganizerResponseDto>();
+
+            // Ticket mappings
+            CreateMap<TicketCreateDto, Ticket>();
+            CreateMap<TicketUpdateDto, Ticket>();
+            CreateMap<Ticket, TicketResponseDto>()
+                .ForMember(dest => dest.EventTitle,
+                           opt => opt.MapFrom(src => src.Event != null ? src.Event.Title : string.Empty));
+        }
+    }
+}

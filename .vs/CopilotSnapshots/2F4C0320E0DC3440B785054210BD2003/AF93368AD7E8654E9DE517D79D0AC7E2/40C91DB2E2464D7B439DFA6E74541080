@@ -1,0 +1,23 @@
+﻿using ApiApp.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+
+namespace ApiApp.Data
+{
+    public class ApiAppDbContext : DbContext
+    {
+        public ApiAppDbContext(DbContextOptions<ApiAppDbContext> options) : base(options)
+        {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApiAppDbContext).Assembly);
+            base.OnModelCreating(modelBuilder);
+        }
+
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Organizer> Organizers { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+    }
+}
