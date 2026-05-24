@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\4b83539b-a47a-45f5-96a6-1165374bf394_Screenshot 2025-03-24 210218.png",
+      "PackagePath": "staticwebassets\\uploads\\banners\\4b83539b-a47a-45f5-96a6-1165374bf394_Screenshot 2025-03-24 210218.png"
+    },
+    {
+      "Id": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\91d4b1e3-ecaa-4982-b41a-67ff53686eb4_Screenshot 2025-03-24 210218.png",
+      "PackagePath": "staticwebassets\\uploads\\banners\\91d4b1e3-ecaa-4982-b41a-67ff53686eb4_Screenshot 2025-03-24 210218.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ApiApp.props",
+      "PackagePath": "build\\ApiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ApiApp.props",
+      "PackagePath": "buildMultiTargeting\\ApiApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ApiApp.props",
+      "PackagePath": "buildTransitive\\ApiApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

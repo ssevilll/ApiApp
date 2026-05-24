@@ -1,5 +1,6 @@
 using ApiApp;
 using ApiApp.Data;
+using EventTicketing.API;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

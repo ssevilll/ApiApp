@@ -2,16 +2,8 @@ using ApiApp.Interfaces;
 
 namespace ApiApp.Services
 {
-    public class FileService : IFileService
+    public class FileService(IWebHostEnvironment _env, IHttpContextAccessor _httpContextAccessor) : IFileService
     {
-        private readonly IWebHostEnvironment _env;
-        private readonly IHttpContextAccessor _httpContextAccessor;
-
-        public FileService(IWebHostEnvironment env, IHttpContextAccessor httpContextAccessor)
-        {
-            _env = env;
-            _httpContextAccessor = httpContextAccessor;
-        }
 
         private string WebRootPath
         {

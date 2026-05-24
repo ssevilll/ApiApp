@@ -1,0 +1,69 @@
+﻿using ApiApp.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace ApiApp.Services
+{
+    public class JWTService
+    {
+            public string GenerateToken(AppUser user, IList<string> roles, IConfiguration config)
+            {
+                var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Id),
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim("FullName", user.FullName ?? "")
+            };
+                claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
+
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:Key"]));
+                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+                var token = new JwtSecurityToken(
+                    issuer: config["JWT:Issuer"],
+                    audience: config["JWT:Audience"],
+                    claims: claims,
+                    expires: DateTime.UtcNow.AddMinutes(10), 
+                    signingCredentials: creds
+                );
+
+                return new JwtSecurityTokenHandler().WriteToken(token);
+            }
+
+            public string GenerateRefreshToken()
+            {
+                var randomBytes = new byte[64];
+                using var rng = RandomNumberGenerator.Create();
+                rng.GetBytes(randomBytes);
+                return Convert.ToBase64String(randomBytes);
+            }
+
+            public ClaimsPrincipal? GetPrincipalFromExpiredToken(string token, IConfiguration config)
+            {
+                var tokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = false,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = config["JWT:Issuer"],
+                    ValidAudience = config["JWT:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(config["JWT:Key"]))
+                };
+
+                var handler = new JwtSecurityTokenHandler();
+                var principal = handler.ValidateToken(token, tokenValidationParameters, out var securityToken);
+
+                if (securityToken is not JwtSecurityToken jwtToken ||
+                    !jwtToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256))
+                    throw new SecurityTokenException("Invalid token");
+
+                return principal;
+            }
+        
+    }
+}

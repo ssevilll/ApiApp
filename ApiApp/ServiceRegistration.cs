@@ -1,53 +1,92 @@
+using ApiApp.API.Services;
 using ApiApp.Data;
-using ApiApp.DTOs.EventDtos;
-using ApiApp.DTOs.OrganizerDtos;
-using ApiApp.DTOs.TicketDtos;
-using ApiApp.Interfaces;
 using ApiApp.Models;
 using ApiApp.Profile;
 using ApiApp.Services;
-using ApiApp.Validation.Validators;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
+using ApiApp.DTOs.EventDtos;
+using FluentValidation.AspNetCore;
 
-namespace ApiApp
+namespace EventTicketing.API
 {
     public static class ServiceRegistration
     {
-        public static void AddServices(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddControllers();
             services.AddEndpointsApiExplorer();
+            services.AddSwaggerGen(c =>
+            {
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Token-based authentication using JWT. Enter 'Bearer' followed by your token in the format: 'Bearer {token}'"
+                });
 
-            services.AddSwaggerGen();
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
+                        },
+                        new string[] {}
+                    }
+                });
+            });
 
-            services.AddAutoMapper(typeof(MappingProfile));
-
-            // FluentValidation
-            services.AddScoped<IValidator<EventCreateDto>, EventCreateValidator>();
-            services.AddScoped<IValidator<EventUpdateDto>, EventUpdateValidator>();
-            services.AddScoped<IValidator<OrganizerCreateDto>, OrganizerCreateValidator>();
-            services.AddScoped<IValidator<OrganizerUpdateDto>, OrganizerUpdateValidator>();
-            services.AddScoped<IValidator<TicketCreateDto>, TicketCreateValidator>();
-            services.AddScoped<IValidator<TicketUpdateDto>, TicketUpdateValidator>();
-
-            // File service
-            services.AddHttpContextAccessor();
-            services.AddScoped<IFileService, FileService>();
 
             services.AddDbContext<ApiAppDbContext>(options =>
-                options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<AppUser, IdentityRole>(opt=>
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
+
+            services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApiAppDbContext>()
+                .AddDefaultTokenProviders();
+
+
+            services.AddAuthentication(options =>
             {
-                    opt.Password.RequireDigit = true;
-                    opt.Password.RequireLowercase = true;
-                    opt.Password.RequireUppercase = true;
-                    opt.Password.RequireNonAlphanumeric = false;
-                    opt.Password.RequiredLength = 6;
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-                .AddEntityFrameworkStores<ApiAppDbContext>();
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = configuration["JWT:Issuer"],
+                    ValidAudience = configuration["JWT:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"]))
+                };
+            });
+
+            services.AddAutoMapper(typeof(MappingProfile).Assembly);
+            services.AddScoped<JWTService>();
+            services.AddScoped<FileService>();
+            services.AddScoped<EmailService>();
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssemblyContaining<EventCreateDtoValidator>();
+
+            return services;
         }
     }
 }
