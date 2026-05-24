@@ -1,4 +1,5 @@
 ﻿using ApiApp.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -30,6 +31,51 @@ namespace ApiApp.Data
                 new Ticket { Id = 1, EventId = 1, Type = "General Admission", Price = 99.99m, QuantityAvailable = 500 },
                 new Ticket { Id = 2, EventId = 1, Type = "VIP", Price = 199.99m, QuantityAvailable = 100 },
                 new Ticket { Id = 3, EventId = 2, Type = "Standard", Price = 50.00m, QuantityAvailable = 1000 }
+            );
+
+            // Seed Roles
+            var adminRoleId = "1";
+            var memberRoleId = "2";
+            modelBuilder.Entity<IdentityRole>().HasData(
+                new IdentityRole
+                {
+                    Id = adminRoleId,
+                    Name = "admin",
+                    NormalizedName = "ADMIN"
+                },
+                new IdentityRole
+                {
+                    Id = memberRoleId,
+                    Name = "MEMBER",
+                    NormalizedName = "MEMBER"
+                }
+            );
+
+            // Seed Admin User
+            var adminUserId = "1";
+            var adminEmail = "admin@eventapp.com";
+            var adminUser = new AppUser
+            {
+                Id = adminUserId,
+                UserName = adminEmail,
+                NormalizedUserName = adminEmail.ToUpper(),
+                Email = adminEmail,
+                NormalizedEmail = adminEmail.ToUpper(),
+                EmailConfirmed = true,
+                FullName = "Admin User",
+                SecurityStamp = Guid.NewGuid().ToString(),
+                PasswordHash = "<PASTE_HASHED_PASSWORD_HERE>"
+            };
+            modelBuilder.Entity<AppUser>().HasData(adminUser);
+
+
+            // Assign Admin User to Admin Role
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
+                {
+                    UserId = adminUserId,
+                    RoleId = adminRoleId
+                }
             );
         }
 

@@ -1,10 +1,12 @@
 using ApiApp.Data;
+using ApiApp.DTOs.EventDtos;
 using ApiApp.DTOs.TicketDtos;
 using ApiApp.Models;
 using AutoMapper;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace ApiApp.Controllers
 {
@@ -22,9 +24,9 @@ namespace ApiApp.Controllers
         public async Task<IActionResult> GetAll()
         {
             var tickets = await _context.Tickets
-                .Include(t => t.Event)
+            .Include(t => t.Event)
                 .ToListAsync();
-            return Ok();
+            return Ok(_mapper.Map<List<TicketResponseDto>>(tickets));
         }
 
         [HttpGet("{id}")]
@@ -34,7 +36,7 @@ namespace ApiApp.Controllers
                 .Include(t => t.Event)
                 .FirstOrDefaultAsync(t => t.Id == id);
             if (ticket == null) return NotFound();
-            return Ok();
+            return Ok(_mapper.Map<List<TicketResponseDto>>(ticket));
         }
 
         [HttpPost]

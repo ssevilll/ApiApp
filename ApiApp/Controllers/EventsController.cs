@@ -124,7 +124,8 @@ namespace ApiApp.Controllers
                 .Where(t => t.EventId == eventId)
                 .ToListAsync();
 
-            return Ok();
+            var ticketDtos = _mapper.Map<List<TicketResponseDto>>(tickets);
+            return Ok(ticketDtos);
         }
 
 
@@ -136,7 +137,8 @@ namespace ApiApp.Controllers
                 .FirstOrDefaultAsync(e => e.Id == eventId);
 
             if (ev == null) return NotFound($"Event {eventId} not found.");
-            return Ok();
+            var organizerDto = _mapper.Map<OrganizerResponseDto>(ev.Organizer);
+            return Ok(organizerDto);
         }
     }
 }

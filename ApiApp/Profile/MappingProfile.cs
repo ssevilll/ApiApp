@@ -1,31 +1,64 @@
+using AutoMapper;
+using ApiApp.Models;
 using ApiApp.DTOs.EventDtos;
 using ApiApp.DTOs.OrganizerDtos;
 using ApiApp.DTOs.TicketDtos;
 using ApiApp.DTOs.UserDtos;
-using ApiApp.Models;
 
-namespace ApiApp.Profile
+public class MappingProfile : Profile
 {
-    public class MappingProfile : AutoMapper.Profile
+    public MappingProfile()
     {
-        public MappingProfile()
-        {
+        // Event mappings
+        CreateMap<Event, EventResponseDto>();
+        CreateMap<EventCreateDto, Event>()
+            .ForMember(dest => dest.BannerImageUrl, opt => opt.Ignore())
+            .ForMember(dest => dest.Organizer, opt => opt.Ignore())
+            .ForMember(dest => dest.Tickets, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
+        CreateMap<EventUpdateDto, Event>()
+            .ForMember(dest => dest.BannerImageUrl, opt => opt.Ignore())
+            .ForMember(dest => dest.Organizer, opt => opt.Ignore())
+            .ForMember(dest => dest.Tickets, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
 
-            CreateMap<OrganizerCreateDto, Organizer>();
-            CreateMap<OrganizerUpdateDto, Organizer>();
-            CreateMap<Organizer, OrganizerResponseDto>();
+        // Organizer mappings
+        CreateMap<OrganizerCreateDto, Organizer>()
+            .ForMember(dest => dest.LogoUrl, opt => opt.Ignore())
+            .ForMember(dest => dest.Events, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
+        CreateMap<OrganizerUpdateDto, Organizer>()
+            .ForMember(dest => dest.LogoUrl, opt => opt.Ignore())
+            .ForMember(dest => dest.Events, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
+        CreateMap<Organizer, OrganizerResponseDto>();
 
+        // Ticket mappings
+        CreateMap<TicketCreateDto, Ticket>()
+            .ForMember(dest => dest.Event, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
+        CreateMap<TicketUpdateDto, Ticket>()
+            .ForMember(dest => dest.EventId, opt => opt.Ignore())
+            .ForMember(dest => dest.Event, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
+        CreateMap<Ticket, TicketResponseDto>();
 
-            CreateMap<EventCreateDto, Event>();
-            CreateMap<EventUpdateDto, Event>();
-            CreateMap<Event, EventResponseDto>();
-
-
-            CreateMap<TicketCreateDto, Ticket>();
-            CreateMap<TicketUpdateDto, Ticket>();
-            CreateMap<Ticket, TicketResponseDto>();
-
-            CreateMap<RegisterDto, AppUser>();
-        }
+        // User mappings
+        CreateMap<RegisterDto, AppUser>()
+            .ForMember(dest => dest.RefreshToken, opt => opt.Ignore())
+            .ForMember(dest => dest.RefreshTokenExpiry, opt => opt.Ignore())
+            .ForMember(dest => dest.Id, opt => opt.Ignore())
+            .ForMember(dest => dest.NormalizedUserName, opt => opt.Ignore())
+            .ForMember(dest => dest.NormalizedEmail, opt => opt.Ignore())
+            .ForMember(dest => dest.EmailConfirmed, opt => opt.Ignore())
+            .ForMember(dest => dest.PasswordHash, opt => opt.Ignore())
+            .ForMember(dest => dest.SecurityStamp, opt => opt.Ignore())
+            .ForMember(dest => dest.ConcurrencyStamp, opt => opt.Ignore())
+            .ForMember(dest => dest.PhoneNumber, opt => opt.Ignore())
+            .ForMember(dest => dest.PhoneNumberConfirmed, opt => opt.Ignore())
+            .ForMember(dest => dest.TwoFactorEnabled, opt => opt.Ignore())
+            .ForMember(dest => dest.LockoutEnd, opt => opt.Ignore())
+            .ForMember(dest => dest.LockoutEnabled, opt => opt.Ignore())
+            .ForMember(dest => dest.AccessFailedCount, opt => opt.Ignore());
     }
 }

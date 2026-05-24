@@ -1,7 +1,6 @@
 using ApiApp.API.Services;
 using ApiApp.Data;
 using ApiApp.Models;
-using ApiApp.Profile;
 using ApiApp.Services;
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -17,6 +16,7 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 using ApiApp.DTOs.EventDtos;
 using FluentValidation.AspNetCore;
+using ApiApp.Interfaces;
 
 namespace EventTicketing.API
 {
@@ -81,7 +81,7 @@ namespace EventTicketing.API
 
             services.AddAutoMapper(typeof(MappingProfile).Assembly);
             services.AddScoped<JWTService>();
-            services.AddScoped<FileService>();
+            services.AddScoped<IFileService, FileService>();
             services.AddScoped<EmailService>();
             services.AddFluentValidationAutoValidation();
             services.AddValidatorsFromAssemblyContaining<EventCreateDtoValidator>();

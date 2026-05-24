@@ -26,7 +26,7 @@ namespace ApiApp.Controllers
         public async Task<IActionResult> GetAll()
         {
             var organizers = await _context.Organizers.ToListAsync();
-            return Ok();
+            return Ok(organizers);
         }
 
         [HttpGet("{id}")]

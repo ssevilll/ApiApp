@@ -289,6 +289,9 @@ C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\scopedcss\bundle\ApiAp
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ApiApp.csproj.Up2Date
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ApiApp.genruntimeconfig.cache
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ref\ApiApp.dll
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiApp.props
@@ -296,6 +299,3 @@ C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuil
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiApp.props
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ApiApp.csproj.Up2Date
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ApiApp.genruntimeconfig.cache
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ref\ApiApp.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nIw7IVHBjdMwMojSgeyMZbs7qwK7oKmaCrlCdY76TK8=",
+  "Hash": "RDBnSa/zBWkZN1G9JXD2gQxBuJ2Pq6vSeub3KqHN3n8=",
   "Source": "ApiApp",
   "BasePath": "_content/ApiApp",
   "Mode": "Default",
@@ -38,6 +38,27 @@
       "OriginalItemSpec": "wwwroot\\uploads\\banners\\4b83539b-a47a-45f5-96a6-1165374bf394_Screenshot 2025-03-24 210218.png"
     },
     {
+      "Identity": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\53344df0-5fd1-414f-a53b-a42be4c2ef49.png",
+      "SourceId": "ApiApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\",
+      "BasePath": "_content/ApiApp",
+      "RelativePath": "uploads/banners/53344df0-5fd1-414f-a53b-a42be4c2ef49#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "epkyn71sqf",
+      "Integrity": "UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\banners\\53344df0-5fd1-414f-a53b-a42be4c2ef49.png"
+    },
+    {
       "Identity": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\91d4b1e3-ecaa-4982-b41a-67ff53686eb4_Screenshot 2025-03-24 210218.png",
       "SourceId": "ApiApp",
       "SourceType": "Discovered",
@@ -57,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\banners\\91d4b1e3-ecaa-4982-b41a-67ff53686eb4_Screenshot 2025-03-24 210218.png"
+    },
+    {
+      "Identity": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\d703b507-a70d-4aed-becb-9aaffc473ef6.png",
+      "SourceId": "ApiApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\",
+      "BasePath": "_content/ApiApp",
+      "RelativePath": "uploads/banners/d703b507-a70d-4aed-becb-9aaffc473ef6#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "epkyn71sqf",
+      "Integrity": "UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\banners\\d703b507-a70d-4aed-becb-9aaffc473ef6.png"
     }
   ],
   "Endpoints": [
@@ -143,6 +185,88 @@
       ]
     },
     {
+      "Route": "uploads/banners/53344df0-5fd1-414f-a53b-a42be4c2ef49.epkyn71sqf.png",
+      "AssetFile": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\53344df0-5fd1-414f-a53b-a42be4c2ef49.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 May 2026 08:44:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "epkyn71sqf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/banners/53344df0-5fd1-414f-a53b-a42be4c2ef49.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/banners/53344df0-5fd1-414f-a53b-a42be4c2ef49.png",
+      "AssetFile": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\53344df0-5fd1-414f-a53b-a42be4c2ef49.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 May 2026 08:44:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas="
+        }
+      ]
+    },
+    {
       "Route": "uploads/banners/91d4b1e3-ecaa-4982-b41a-67ff53686eb4_Screenshot 2025-03-24 210218.307s7943wd.png",
       "AssetFile": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\91d4b1e3-ecaa-4982-b41a-67ff53686eb4_Screenshot 2025-03-24 210218.png",
       "Selectors": [],
@@ -221,6 +345,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-cz3CS8PkfygnYezr/0kM3JlGYq02zSE6ZGFKysO1TRg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/banners/d703b507-a70d-4aed-becb-9aaffc473ef6.epkyn71sqf.png",
+      "AssetFile": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\d703b507-a70d-4aed-becb-9aaffc473ef6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 May 2026 08:45:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "epkyn71sqf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/banners/d703b507-a70d-4aed-becb-9aaffc473ef6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/banners/d703b507-a70d-4aed-becb-9aaffc473ef6.png",
+      "AssetFile": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\wwwroot\\uploads\\banners\\d703b507-a70d-4aed-becb-9aaffc473ef6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 May 2026 08:45:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UqBUQM97NIcZNMqbkGnNRamfdAKzGaPeD/V70tXodas="
         }
       ]
     }

@@ -50,7 +50,7 @@ namespace ApiApp.Controllers
             await userManager.AddToRoleAsync(newUser, "Member");
 
             var token = await userManager.GenerateEmailConfirmationTokenAsync(newUser);
-            var confirmationLink = $"https://localhost:5033/api/Account/confirm-email?userId={user.Id}&token={Uri.EscapeDataString(token)}";
+            var confirmationLink =$"{newUser.Id} ,{Uri.EscapeDataString(token)}";
 
             await emailService.SendEmailAsync(newUser.Email,
                                               "Confirm your email",
@@ -84,7 +84,7 @@ namespace ApiApp.Controllers
             await userManager.UpdateAsync(user);
 
 
-            return Ok("Login successful");
+            return Ok( new { refreshToken, accessToken });
         }
 
         [HttpGet("confirmemail")]
@@ -105,7 +105,7 @@ namespace ApiApp.Controllers
             var user = await userManager.FindByEmailAsync(email);
             if (user is null) return NotFound("User not found");
             var token = await userManager.GeneratePasswordResetTokenAsync(user);
-            var resetLink = $"https://localhost:5033/api/Account/reset-password?email={email}&token={Uri.EscapeDataString(token)}";
+            var resetLink = token;
             await emailService.SendEmailAsync(email,
                                               "Reset your password",
                                               $"You can reset your password by clicking <a href='{resetLink}'>here</a>.");
@@ -140,34 +140,18 @@ namespace ApiApp.Controllers
             var newRefreshTokenExpiry = DateTime.UtcNow.AddDays(3);
 
             user.RefreshToken = newRefreshToken;
+            user.RefreshTokenExpiry = newRefreshTokenExpiry;
             await userManager.UpdateAsync(user);
             return Ok(new { AccessToken = newAccessToken, RefreshToken = newRefreshToken });
         }
 
-        [HttpPost("revoke")]
-        [Authorize]
-        public async Task<IActionResult> Revoke()
-        {
-            var userId = User.Claims.FirstOrDefault(c => c.Type == "id")?.Value;
-            var user = await userManager.FindByIdAsync(userId);
-            if (user is null) return NotFound("User not found");
-            user.RefreshToken = null;
-            user.RefreshTokenExpiry = DateTime.MinValue;
-            await userManager.UpdateAsync(user);
-            return Ok();
-        }
 
         [HttpGet("profile")]
-        public async Task<IActionResult> GetProfile()
+        public IActionResult GetProfile(string userName)
         {
             var userId = User.Claims.FirstOrDefault(c => c.Type == "id")?.Value;
-            var user = await userManager.FindByIdAsync(userId);
-            var userName = User.Claims.FirstOrDefault(c => c.Type == "userName")?.Value;
-            if (user is null) return NotFound("User not found");
             var fullName = User.Claims.FirstOrDefault(c => c.Type == "fullName")?.Value;
-
             var roles = User.Claims.Where(c => c.Type == "role").Select(c => c.Value).ToList();
-
             return Ok(new { userId, userName, fullName, roles });
         }
     }
