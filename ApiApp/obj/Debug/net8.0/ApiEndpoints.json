@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "email",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -59,13 +59,7 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userName",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -117,9 +111,19 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ApiApp.Controllers.AccountController",
+    "Method": "RevokeToken",
+    "RelativePath": "api/Account/revoke",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "GetAll",
-    "RelativePath": "api/events",
+    "RelativePath": "api/Events",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -129,7 +133,7 @@
   {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "Create",
-    "RelativePath": "api/events",
+    "RelativePath": "api/Events",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -170,7 +174,7 @@
   {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "GetOrganizer",
-    "RelativePath": "api/events/{eventId}/organizer",
+    "RelativePath": "api/Events/{eventId}/organizer",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -186,7 +190,7 @@
   {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "GetTickets",
-    "RelativePath": "api/events/{eventId}/tickets",
+    "RelativePath": "api/Events/{eventId}/tickets",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -202,7 +206,7 @@
   {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "GetById",
-    "RelativePath": "api/events/{id}",
+    "RelativePath": "api/Events/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -218,7 +222,7 @@
   {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "Update",
-    "RelativePath": "api/events/{id}",
+    "RelativePath": "api/Events/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -239,7 +243,7 @@
   {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "Delete",
-    "RelativePath": "api/events/{id}",
+    "RelativePath": "api/Events/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -255,7 +259,7 @@
   {
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "UploadBanner",
-    "RelativePath": "api/events/{id}/banner",
+    "RelativePath": "api/Events/{id}/banner",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -276,7 +280,7 @@
   {
     "ContainingType": "ApiApp.Controllers.OrganizersController",
     "Method": "GetAll",
-    "RelativePath": "api/organizers",
+    "RelativePath": "api/Organizers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -286,7 +290,7 @@
   {
     "ContainingType": "ApiApp.Controllers.OrganizersController",
     "Method": "Create",
-    "RelativePath": "api/organizers",
+    "RelativePath": "api/Organizers",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -317,7 +321,7 @@
   {
     "ContainingType": "ApiApp.Controllers.OrganizersController",
     "Method": "GetById",
-    "RelativePath": "api/organizers/{id}",
+    "RelativePath": "api/Organizers/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -333,7 +337,7 @@
   {
     "ContainingType": "ApiApp.Controllers.OrganizersController",
     "Method": "Update",
-    "RelativePath": "api/organizers/{id}",
+    "RelativePath": "api/Organizers/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -354,7 +358,7 @@
   {
     "ContainingType": "ApiApp.Controllers.OrganizersController",
     "Method": "Delete",
-    "RelativePath": "api/organizers/{id}",
+    "RelativePath": "api/Organizers/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -370,7 +374,7 @@
   {
     "ContainingType": "ApiApp.Controllers.OrganizersController",
     "Method": "UploadLogo",
-    "RelativePath": "api/organizers/{id}/logo",
+    "RelativePath": "api/Organizers/{id}/logo",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -391,7 +395,7 @@
   {
     "ContainingType": "ApiApp.Controllers.OrganizersController",
     "Method": "GetEvents",
-    "RelativePath": "api/organizers/{organizerId}/events",
+    "RelativePath": "api/Organizers/{organizerId}/events",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -407,7 +411,7 @@
   {
     "ContainingType": "ApiApp.Controllers.TicketsController",
     "Method": "GetAll",
-    "RelativePath": "api/tickets",
+    "RelativePath": "api/Tickets",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -417,7 +421,7 @@
   {
     "ContainingType": "ApiApp.Controllers.TicketsController",
     "Method": "Create",
-    "RelativePath": "api/tickets",
+    "RelativePath": "api/Tickets",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -433,7 +437,7 @@
   {
     "ContainingType": "ApiApp.Controllers.TicketsController",
     "Method": "GetById",
-    "RelativePath": "api/tickets/{id}",
+    "RelativePath": "api/Tickets/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -449,7 +453,7 @@
   {
     "ContainingType": "ApiApp.Controllers.TicketsController",
     "Method": "Update",
-    "RelativePath": "api/tickets/{id}",
+    "RelativePath": "api/Tickets/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -470,7 +474,7 @@
   {
     "ContainingType": "ApiApp.Controllers.TicketsController",
     "Method": "Delete",
-    "RelativePath": "api/tickets/{id}",
+    "RelativePath": "api/Tickets/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

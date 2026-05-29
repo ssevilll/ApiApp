@@ -54,18 +54,19 @@ namespace ApiApp.Data
             // Seed Admin User
             var adminUserId = "1";
             var adminEmail = "admin@eventapp.com";
+            var hasher = new PasswordHasher<AppUser>();
             var adminUser = new AppUser
             {
                 Id = adminUserId,
                 UserName = adminEmail,
-                NormalizedUserName = adminEmail.ToUpper(),
+                NormalizedUserName = adminEmail.ToUpperInvariant(),
                 Email = adminEmail,
-                NormalizedEmail = adminEmail.ToUpper(),
+                NormalizedEmail = adminEmail.ToUpperInvariant(),
                 EmailConfirmed = true,
                 FullName = "Admin User",
-                SecurityStamp = Guid.NewGuid().ToString(),
-                PasswordHash = "<PASTE_HASHED_PASSWORD_HERE>"
+                SecurityStamp = Guid.NewGuid().ToString()
             };
+            adminUser.PasswordHash = hasher.HashPassword(adminUser, "Admin123!");
             modelBuilder.Entity<AppUser>().HasData(adminUser);
 
 

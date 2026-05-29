@@ -74,7 +74,7 @@
         ],
         "parameters": [
           {
-            "name": "userId",
+            "name": "email",
             "in": "query",
             "schema": {
               "type": "string"
@@ -183,14 +183,17 @@
         "tags": [
           "Account"
         ],
-        "parameters": [
-          {
-            "name": "userName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
+        "responses": {
+          "200": {
+            "description": "OK"
           }
+        }
+      }
+    },
+    "/api/Account/revoke": {
+      "post": {
+        "tags": [
+          "Account"
         ],
         "responses": {
           "200": {
@@ -199,7 +202,7 @@
         }
       }
     },
-    "/api/events": {
+    "/api/Events": {
       "get": {
         "tags": [
           "Events"
@@ -273,7 +276,7 @@
         }
       }
     },
-    "/api/events/{id}": {
+    "/api/Events/{id}": {
       "get": {
         "tags": [
           "Events"
@@ -357,7 +360,7 @@
         }
       }
     },
-    "/api/events/{id}/banner": {
+    "/api/Events/{id}/banner": {
       "post": {
         "tags": [
           "Events"
@@ -400,7 +403,7 @@
         }
       }
     },
-    "/api/events/{eventId}/tickets": {
+    "/api/Events/{eventId}/tickets": {
       "get": {
         "tags": [
           "Events"
@@ -423,7 +426,7 @@
         }
       }
     },
-    "/api/events/{eventId}/organizer": {
+    "/api/Events/{eventId}/organizer": {
       "get": {
         "tags": [
           "Events"
@@ -446,7 +449,7 @@
         }
       }
     },
-    "/api/organizers": {
+    "/api/Organizers": {
       "get": {
         "tags": [
           "Organizers"
@@ -506,7 +509,7 @@
         }
       }
     },
-    "/api/organizers/{id}": {
+    "/api/Organizers/{id}": {
       "get": {
         "tags": [
           "Organizers"
@@ -590,7 +593,7 @@
         }
       }
     },
-    "/api/organizers/{id}/logo": {
+    "/api/Organizers/{id}/logo": {
       "post": {
         "tags": [
           "Organizers"
@@ -633,7 +636,7 @@
         }
       }
     },
-    "/api/organizers/{organizerId}/events": {
+    "/api/Organizers/{organizerId}/events": {
       "get": {
         "tags": [
           "Organizers"
@@ -656,7 +659,7 @@
         }
       }
     },
-    "/api/tickets": {
+    "/api/Tickets": {
       "get": {
         "tags": [
           "Tickets"
@@ -697,7 +700,7 @@
         }
       }
     },
-    "/api/tickets/{id}": {
+    "/api/Tickets/{id}": {
       "get": {
         "tags": [
           "Tickets"
@@ -797,7 +800,8 @@
           },
           "date": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "nullable": true
           },
           "location": {
             "type": "string",
@@ -805,7 +809,8 @@
           },
           "organizerId": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false

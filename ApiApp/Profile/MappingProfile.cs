@@ -20,7 +20,8 @@ public class MappingProfile : Profile
             .ForMember(dest => dest.BannerImageUrl, opt => opt.Ignore())
             .ForMember(dest => dest.Organizer, opt => opt.Ignore())
             .ForMember(dest => dest.Tickets, opt => opt.Ignore())
-            .ForMember(dest => dest.Id, opt => opt.Ignore());
+            .ForMember(dest => dest.Id, opt => opt.Ignore())
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
 
         // Organizer mappings
         CreateMap<OrganizerCreateDto, Organizer>()

@@ -4,20 +4,19 @@ using ApiApp.DTOs.TicketDtos;
 using ApiApp.Models;
 using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace ApiApp.Controllers
 {
-    [ApiController]
-    [Route("api/tickets")]
     public class TicketsController(
         ApiAppDbContext _context,
         IMapper _mapper,
         IValidator<TicketCreateDto> _createValidator,
         IValidator<TicketUpdateDto> _updateValidator
-        ) : ControllerBase
+        ) : BaseController
     {
 
         [HttpGet]
@@ -26,7 +25,8 @@ namespace ApiApp.Controllers
             var tickets = await _context.Tickets
             .Include(t => t.Event)
                 .ToListAsync();
-            return Ok(_mapper.Map<List<TicketResponseDto>>(tickets));
+            var response = _mapper.Map<List<TicketResponseDto>>(tickets);
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
@@ -36,10 +36,12 @@ namespace ApiApp.Controllers
                 .Include(t => t.Event)
                 .FirstOrDefaultAsync(t => t.Id == id);
             if (ticket == null) return NotFound();
-            return Ok(_mapper.Map<List<TicketResponseDto>>(ticket));
+            var response = _mapper.Map<TicketResponseDto>(ticket);
+            return Ok(response);
         }
 
         [HttpPost]
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> Create(TicketCreateDto dto)
         {
             var validation = await _createValidator.ValidateAsync(dto);
@@ -54,10 +56,11 @@ namespace ApiApp.Controllers
             _context.Tickets.Add(ticket);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok("Ticket created successfully." );
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Update(int id, TicketUpdateDto dto)
         {
             var validation = await _updateValidator.ValidateAsync(dto);
@@ -72,10 +75,11 @@ namespace ApiApp.Controllers
             _mapper.Map(dto, ticket);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok("Ticket updated successfully." );
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var ticket = await _context.Tickets.FindAsync(id);

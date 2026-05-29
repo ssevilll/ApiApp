@@ -6,27 +6,27 @@ using ApiApp.Models;
 using ApiApp.Services;
 using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiApp.Controllers
 {
-    [ApiController]
-    [Route("api/organizers")]
     public class OrganizersController(
         ApiAppDbContext _context,
         IMapper _mapper,
         IFileService _fileService,
         IValidator<OrganizerCreateDto> _createValidator,
         IValidator<OrganizerUpdateDto> _updateValidator
-        ) : ControllerBase
+        ) : BaseController
     {
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var organizers = await _context.Organizers.ToListAsync();
-            return Ok(organizers);
+            var response = _mapper.Map<List<OrganizerResponseDto>>(organizers);
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
@@ -34,10 +34,12 @@ namespace ApiApp.Controllers
         {
             var organizer = await _context.Organizers.FindAsync(id);
             if (organizer == null) return NotFound();
-            return Ok();
+            var response = _mapper.Map<OrganizerResponseDto>(organizer);
+            return Ok(response);
         }
 
         [HttpPost]
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> Create([FromForm] OrganizerCreateDto dto)
         {
             var validation = await _createValidator.ValidateAsync(dto);
@@ -58,10 +60,11 @@ namespace ApiApp.Controllers
             _context.Organizers.Add(organizer);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok("Organizer created successfully.");
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> Update(int id, OrganizerUpdateDto dto)
         {
             var validation = await _updateValidator.ValidateAsync(dto);
@@ -79,10 +82,11 @@ namespace ApiApp.Controllers
             _mapper.Map(dto, organizer);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok("Organizer updated successfully.");
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var organizer = await _context.Organizers.FindAsync(id);
@@ -95,6 +99,7 @@ namespace ApiApp.Controllers
         }
 
         [HttpPost("{id}/logo")]
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> UploadLogo(int id, IFormFile logo)
         {
             if (logo == null || logo.Length == 0)
@@ -107,7 +112,7 @@ namespace ApiApp.Controllers
             organizer.LogoUrl = await _fileService.SaveFileAsync(logo, "logos");
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok("Logo uploaded successfully." );
         }
 
         [HttpGet("{organizerId}/events")]
@@ -121,7 +126,8 @@ namespace ApiApp.Controllers
                 .Where(e => e.OrganizerId == organizerId)
                 .ToListAsync();
 
-            return Ok();
+            var response = _mapper.Map<List<EventResponseDto>>(events);
+            return Ok(response);
         }
     }
 }

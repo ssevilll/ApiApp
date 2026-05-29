@@ -101,17 +101,17 @@ namespace ApiApp.Data.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ffa57908-6454-44be-9ebc-390365ed7add",
+                            ConcurrencyStamp = "7c610a56-d6be-418a-9d6a-7b7fe103cf24",
                             Email = "admin@eventapp.com",
                             EmailConfirmed = true,
                             FullName = "Admin User",
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@EVENTAPP.COM",
                             NormalizedUserName = "ADMIN@EVENTAPP.COM",
-                            PasswordHash = "<PASTE_HASHED_PASSWORD_HERE>",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBB5LdAT2k/leuLpkZnyEq4CJwVy2FSTZpR3p++FN8UXExDBVE5LnlcucQW8iz9toQ==",
                             PhoneNumberConfirmed = false,
                             RefreshTokenExpiry = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            SecurityStamp = "ef36482b-4f4a-4353-b721-9526d5175b00",
+                            SecurityStamp = "98b746d7-aa8b-4386-9f36-5008f3fbb0f5",
                             TwoFactorEnabled = false,
                             UserName = "admin@eventapp.com"
                         });

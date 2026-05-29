@@ -7,20 +7,19 @@ using ApiApp.Models;
 using ApiApp.Services;
 using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiApp.Controllers
 {
-    [ApiController]
-    [Route("api/events")]
     public class EventsController(
         ApiAppDbContext _context,
         IMapper _mapper,
         IFileService _fileService,
         IValidator<EventCreateDto> _createValidator,
         IValidator<EventUpdateDto> _updateValidator
-        ) : ControllerBase
+        ) : BaseController
     {
 
 
@@ -30,7 +29,8 @@ namespace ApiApp.Controllers
             var events = await _context.Events
                 .Include(e => e.Organizer)
                 .ToListAsync();
-            return Ok(_mapper.Map<List<EventResponseDto>>(events));
+            var response = _mapper.Map<List<EventResponseDto>>(events);
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
@@ -40,10 +40,12 @@ namespace ApiApp.Controllers
                 .Include(e => e.Organizer)
                 .FirstOrDefaultAsync(e => e.Id == id);
             if (ev == null) return NotFound();
-            return Ok(_mapper.Map<EventResponseDto>(ev));
+            var response = _mapper.Map<EventResponseDto>(ev);
+            return Ok(response);
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create([FromForm] EventCreateDto dto)
         {
             var validation = await _createValidator.ValidateAsync(dto);
@@ -63,10 +65,11 @@ namespace ApiApp.Controllers
 
             _context.Events.Add(ev);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok("Event created successfully.");
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Update(int id, EventUpdateDto dto)
         {
             var validation = await _updateValidator.ValidateAsync(dto);
@@ -76,16 +79,20 @@ namespace ApiApp.Controllers
             var ev = await _context.Events.FindAsync(id);
             if (ev == null) return NotFound();
 
-            var organizerExists = await _context.Organizers.AnyAsync(o => o.Id == dto.OrganizerId);
-            if (!organizerExists)
-                return BadRequest($"Organizer with Id {dto.OrganizerId} does not exist.");
+            if (dto.OrganizerId.HasValue)
+            {
+                var organizerExists = await _context.Organizers.AnyAsync(o => o.Id == dto.OrganizerId.Value);
+                if (!organizerExists)
+                    return BadRequest($"Organizer with Id {dto.OrganizerId.Value} does not exist.");
+            }
 
             _mapper.Map(dto, ev);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok("Event updated successfully.");
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var ev = await _context.Events.FindAsync(id);
@@ -98,6 +105,7 @@ namespace ApiApp.Controllers
         }
 
         [HttpPost("{id}/banner")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> UploadBanner(int id, IFormFile banner)
         {
             if (banner == null || banner.Length == 0)
@@ -110,7 +118,7 @@ namespace ApiApp.Controllers
             ev.BannerImageUrl = await _fileService.SaveFileAsync(banner, "banners");
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok("Banner uploaded successfully.");
         }
 
         [HttpGet("{eventId}/tickets")]
@@ -124,8 +132,8 @@ namespace ApiApp.Controllers
                 .Where(t => t.EventId == eventId)
                 .ToListAsync();
 
-            var ticketDtos = _mapper.Map<List<TicketResponseDto>>(tickets);
-            return Ok(ticketDtos);
+            var response = _mapper.Map<List<TicketResponseDto>>(tickets);
+            return Ok(response);
         }
 
 
@@ -137,8 +145,8 @@ namespace ApiApp.Controllers
                 .FirstOrDefaultAsync(e => e.Id == eventId);
 
             if (ev == null) return NotFound($"Event {eventId} not found.");
-            var organizerDto = _mapper.Map<OrganizerResponseDto>(ev.Organizer);
-            return Ok(organizerDto);
+            var response = _mapper.Map<OrganizerResponseDto>(ev.Organizer);
+            return Ok(response);
         }
     }
 }

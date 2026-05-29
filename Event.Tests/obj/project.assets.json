@@ -168,12 +168,12 @@
         },
         "compile": {
           "lib/net8.0/MailKit.dll": {
-            "related": ".dll.config;.pdb;.xml"
+            "related": ".dll.config;.xml;.pdb"
           }
         },
         "runtime": {
           "lib/net8.0/MailKit.dll": {
-            "related": ".dll.config;.pdb;.xml"
+            "related": ".dll.config;.xml;.pdb"
           }
         }
       },
@@ -294,12 +294,12 @@
         },
         "compile": {
           "ref/net6.0/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net6.0/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtimeTargets": {
@@ -815,12 +815,12 @@
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -828,12 +828,12 @@
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -1130,12 +1130,12 @@
         },
         "compile": {
           "lib/net8.0/MimeKit.dll": {
-            "related": ".dll.config;.pdb;.xml"
+            "related": ".dll.config;.xml;.pdb"
           }
         },
         "runtime": {
           "lib/net8.0/MimeKit.dll": {
-            "related": ".dll.config;.pdb;.xml"
+            "related": ".dll.config;.xml;.pdb"
           }
         }
       },
@@ -1419,12 +1419,12 @@
         },
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "frameworkReferences": [
@@ -1438,12 +1438,12 @@
         },
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -1451,12 +1451,12 @@
         "type": "package",
         "compile": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "frameworkReferences": [
@@ -9031,23 +9031,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sevilsb\\.nuget\\packages\\": {},
+    "C:\\Users\\ssbab\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\Event.Tests.csproj",
+      "projectUniqueName": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\Event.Tests.csproj",
       "projectName": "Event.Tests",
-      "projectPath": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\Event.Tests.csproj",
-      "packagesPath": "C:\\Users\\sevilsb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\obj\\",
+      "projectPath": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\Event.Tests.csproj",
+      "packagesPath": "C:\\Users\\ssbab\\.nuget\\packages\\",
+      "outputPath": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sevilsb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ssbab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9056,15 +9056,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ApiApp.csproj": {
-              "projectPath": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ApiApp.csproj"
+            "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ApiApp.csproj": {
+              "projectPath": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ApiApp.csproj"
             }
           }
         }
@@ -9079,7 +9078,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -9126,7 +9125,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
