@@ -9,7 +9,7 @@ namespace ApiApp.Services
 {
     public class JWTService
     {
-            public virtual string GenerateToken(AppUser user, IList<string> roles, IConfiguration config)
+            public string GenerateToken(AppUser user, IList<string> roles, IConfiguration config)
             {
                 var claims = new List<Claim>
             {
@@ -33,7 +33,7 @@ namespace ApiApp.Services
                 return new JwtSecurityTokenHandler().WriteToken(token);
             }
 
-            public virtual string GenerateRefreshToken()
+            public string GenerateRefreshToken()
             {
                 var randomBytes = new byte[64];
                 using var rng = RandomNumberGenerator.Create();
@@ -41,7 +41,7 @@ namespace ApiApp.Services
                 return Convert.ToBase64String(randomBytes);
             }
 
-            public virtual ClaimsPrincipal? GetPrincipalFromExpiredToken(string token, IConfiguration config)
+            public ClaimsPrincipal? GetPrincipalFromExpiredToken(string token, IConfiguration config)
             {
                 var tokenValidationParameters = new TokenValidationParameters
                 {

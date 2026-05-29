@@ -1,5 +1,8 @@
 ﻿using ApiApp.Controllers;
+using ApiApp.Data;
+using ApiApp.DTOs.EventDtos;
 using ApiApp.DTOs.OrganizerDtos;
+using ApiApp.DTOs.TicketDtos;
 using ApiApp.Interfaces;
 using ApiApp.Models;
 using AutoMapper;
@@ -8,38 +11,37 @@ using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Internal;
 using Moq;
 
 namespace Event.Tests.Controllers
 {
-    public class OrganizersControllerTests : IAsyncLifetime
+    public class EventsControllerTests : IAsyncLifetime
     {
-        private ApiApp.Data.ApiAppDbContext _context = null!;
+        private ApiAppDbContext _context = null!;
         private Mock<IMapper> _mapperMock = null!;
         private Mock<IFileService> _fileServiceMock = null!;
-        private Mock<IValidator<OrganizerCreateDto>> _createValidatorMock = null!;
-        private Mock<IValidator<OrganizerUpdateDto>> _updateValidatorMock = null!;
-        private OrganizersController _controller = null!;
+        private Mock<IValidator<EventCreateDto>> _createValidatorMock = null!;
+        private Mock<IValidator<EventUpdateDto>> _updateValidatorMock = null!;
+        private EventsController _controller = null!;
 
         public async Task InitializeAsync()
         {
             _context = await DbContextFactory.CreateSeededContextAsync();
             _mapperMock = new Mock<IMapper>();
             _fileServiceMock = new Mock<IFileService>();
-            _createValidatorMock = new Mock<IValidator<OrganizerCreateDto>>();
-            _updateValidatorMock = new Mock<IValidator<OrganizerUpdateDto>>();
+            _createValidatorMock = new Mock<IValidator<EventCreateDto>>();
+            _updateValidatorMock = new Mock<IValidator<EventUpdateDto>>();
 
             // Default: validation passes
             _createValidatorMock
-                .Setup(v => v.ValidateAsync(It.IsAny<OrganizerCreateDto>(), default))
+                .Setup(v => v.ValidateAsync(It.IsAny<EventCreateDto>(), default))
                 .ReturnsAsync(new ValidationResult());
 
             _updateValidatorMock
-                .Setup(v => v.ValidateAsync(It.IsAny<OrganizerUpdateDto>(), default))
+                .Setup(v => v.ValidateAsync(It.IsAny<EventUpdateDto>(), default))
                 .ReturnsAsync(new ValidationResult());
 
-            _controller = new OrganizersController(
+            _controller = new EventsController(
                 _context,
                 _mapperMock.Object,
                 _fileServiceMock.Object,
@@ -57,11 +59,12 @@ namespace Event.Tests.Controllers
         // ── GetAll ─────────────────────────────────────────────────────────────
 
         [Fact]
-        public async Task GetAll_ShouldReturnOk_WithListOfOrganizers()
+        public async Task GetAll_ShouldReturnOk_WithListOfEvents()
         {
+            // Two events are seeded
             var result = await _controller.GetAll();
 
-            Assert.IsType<OkResult>(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
         [Fact]
@@ -72,24 +75,24 @@ namespace Event.Tests.Controllers
 
             var result = await ctrl.GetAll();
 
-            Assert.IsType<OkResult>(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
         // ── GetById ────────────────────────────────────────────────────────────
 
         [Fact]
-        public async Task GetById_WhenOrganizerExists_ShouldReturnOk()
+        public async Task GetById_WhenEventExists_ShouldReturnOk()
         {
-            // Organizer with Id=1 is seeded by CreateSeededContextAsync
+            // Event Id=1 seeded
             var result = await _controller.GetById(1);
 
-            Assert.IsType<OkResult>(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
         [Fact]
-        public async Task GetById_WhenOrganizerDoesNotExist_ShouldReturnNotFound()
+        public async Task GetById_WhenEventDoesNotExist_ShouldReturnNotFound()
         {
-            var result = await _controller.GetById(999);
+            var result = await _controller.GetById(9999);
 
             Assert.IsType<NotFoundResult>(result);
         }
@@ -97,153 +100,235 @@ namespace Event.Tests.Controllers
         // ── Create ─────────────────────────────────────────────────────────────
 
         [Fact]
-        public async Task Create_ValidDto_ShouldAddOrganizerAndReturnOk()
+        public async Task Create_ValidDto_WithExistingOrganizer_NoBanner_ShouldAddEventAndReturnOk()
         {
-            var dto = new OrganizerCreateDto
+            // Organizer Id=1 exists in seeded data
+            var dto = new EventCreateDto
             {
-                Name = "New Organizer",
-                Email = "neworg@test.com",
-                Phone = "555"
+                Title = "New Event",
+                Date = DateTime.UtcNow.AddMonths(6),
+                Location = "Chicago",
+                OrganizerId = 1,
+                Banner = null
             };
 
-            var entity = new Organizer
+            var entity = new ApiApp.Models.Event
             {
-                Name = dto.Name,
-                Email = dto.Email,
-                Phone = dto.Phone
+                Title = dto.Title,
+                Date = dto.Date,
+                Location = dto.Location,
+                OrganizerId = dto.OrganizerId
             };
 
-            _mapperMock
-                .Setup(m => m.Map<Organizer>(dto))
-                .Returns(entity);
+            _mapperMock.Setup(m => m.Map<ApiApp.Models.Event>(dto)).Returns(entity);
 
             var result = await _controller.Create(dto);
 
-            Assert.IsType<OkResult>(result);
-            Assert.True(_context.Organizers.Any(o => o.Email == "neworg@test.com"));
+            Assert.IsType<OkObjectResult>(result);
+            Assert.True(_context.Events.Any(e => e.Title == "New Event"));
         }
 
         [Fact]
-        public async Task Create_DuplicateEmail_ShouldReturnConflict()
+        public async Task Create_ValidDto_WithBanner_ShouldSaveBannerAndReturnOk()
         {
-            // Organizer with Email "tech@corp.com" already exists in seeded data
-            var dto = new OrganizerCreateDto
+            const string bannerUrl = "banners/event.png";
+            _fileServiceMock
+                .Setup(f => f.SaveFileAsync(It.IsAny<IFormFile>(), "banners"))
+                .ReturnsAsync(bannerUrl);
+
+            var bannerMock = new Mock<IFormFile>();
+            bannerMock.Setup(f => f.Length).Returns(4096);
+
+            var dto = new EventCreateDto
             {
-                Name = "Duplicate",
-                Email = "tech@corp.com",
-                Phone = "000"
+                Title = "Banner Event",
+                Date = DateTime.UtcNow.AddMonths(4),
+                Location = "Seattle",
+                OrganizerId = 1,
+                Banner = bannerMock.Object
             };
 
-            _mapperMock
-                .Setup(m => m.Map<Organizer>(dto))
-                .Returns(new Organizer { Name = dto.Name, Email = dto.Email });
+            var entity = new ApiApp.Models.Event
+            {
+                Title = dto.Title,
+                Date = dto.Date,
+                Location = dto.Location,
+                OrganizerId = dto.OrganizerId
+            };
+
+            _mapperMock.Setup(m => m.Map<ApiApp.Models.Event>(dto)).Returns(entity);
 
             var result = await _controller.Create(dto);
 
-            Assert.IsType<ConflictObjectResult>(result);
+            Assert.IsType<OkObjectResult>(result);
+            var saved = _context.Events.FirstOrDefault(e => e.Title == "Banner Event");
+            Assert.NotNull(saved);
+            Assert.Equal(bannerUrl, saved!.BannerImageUrl);
+        }
+
+        [Fact]
+        public async Task Create_InvalidDto_ShouldReturnBadRequest()
+        {
+            var dto = new EventCreateDto { Title = "", Location = "", OrganizerId = 0, Date = DateTime.UtcNow.AddDays(-1) };
+
+            _createValidatorMock
+                .Setup(v => v.ValidateAsync(dto, default))
+                .ReturnsAsync(new ValidationResult(new[]
+                {
+                    new ValidationFailure("Title", "Title is required."),
+                    new ValidationFailure("Location", "Location is required."),
+                    new ValidationFailure("OrganizerId", "OrganizerId must be a positive integer."),
+                    new ValidationFailure("Date", "Event date must be in the future.")
+                }));
+
+            var result = await _controller.Create(dto);
+
+            Assert.IsType<BadRequestObjectResult>(result);
+        }
+
+        [Fact]
+        public async Task Create_NonExistingOrganizer_ShouldReturnBadRequest()
+        {
+            var dto = new EventCreateDto
+            {
+                Title = "Ghost Event",
+                Date = DateTime.UtcNow.AddMonths(2),
+                Location = "Nowhere",
+                OrganizerId = 9999
+            };
+
+            _mapperMock.Setup(m => m.Map<ApiApp.Models.Event>(dto))
+                       .Returns(new ApiApp.Models.Event { Title = dto.Title, OrganizerId = dto.OrganizerId });
+
+            var result = await _controller.Create(dto);
+
+            var badRequest = Assert.IsType<BadRequestObjectResult>(result);
+            Assert.Contains("9999", badRequest.Value!.ToString());
         }
 
         // ── Update ─────────────────────────────────────────────────────────────
 
         [Fact]
-        public async Task Update_ExistingOrganizer_ShouldReturnOk()
+        public async Task Update_ExistingEvent_ValidDto_NoOrganizerChange_ShouldReturnOk()
         {
-            var dto = new OrganizerUpdateDto
-            {
-                Name = "Updated Name",
-                Email = "updated@test.com",
-                Phone = "999"
-            };
+            var dto = new EventUpdateDto { Title = "Updated Title", Location = "Boston" };
 
             _mapperMock
-                .Setup(m => m.Map(dto, It.IsAny<Organizer>()))
-                .Callback<OrganizerUpdateDto, Organizer>((d, o) =>
+                .Setup(m => m.Map(dto, It.IsAny<ApiApp.Models.Event>()))
+                .Callback<EventUpdateDto, ApiApp.Models.Event>((d, e) =>
                 {
-                    o.Name = d.Name;
-                    o.Email = d.Email;
-                    o.Phone = d.Phone;
+                    if (d.Title != null) e.Title = d.Title;
+                    if (d.Location != null) e.Location = d.Location;
                 });
 
             var result = await _controller.Update(1, dto);
 
-            Assert.IsType<OkResult>(result);
-
-            var updated = await _context.Organizers.FindAsync(1);
-            Assert.Equal("Updated Name", updated!.Name);
-            Assert.Equal("updated@test.com", updated.Email);
+            Assert.IsType<OkObjectResult>(result);
+            var updated = await _context.Events.FindAsync(1);
+            Assert.Equal("Updated Title", updated!.Title);
         }
 
         [Fact]
-        public async Task Update_NonExistingOrganizer_ShouldReturnNotFound()
+        public async Task Update_ExistingEvent_WithValidOrganizerId_ShouldReturnOk()
         {
-            var result = await _controller.Update(9999, new OrganizerUpdateDto
-            {
-                Name = "Ghost",
-                Email = "ghost@test.com"
-            });
+            // Organizer Id=2 exists in seeded data
+            var dto = new EventUpdateDto { OrganizerId = 2 };
+
+            _mapperMock
+                .Setup(m => m.Map(dto, It.IsAny<ApiApp.Models.Event>()))
+                .Callback<EventUpdateDto, ApiApp.Models.Event>((d, e) =>
+                {
+                    if (d.OrganizerId.HasValue) e.OrganizerId = d.OrganizerId.Value;
+                });
+
+            var result = await _controller.Update(1, dto);
+
+            Assert.IsType<OkObjectResult>(result);
+        }
+
+        [Fact]
+        public async Task Update_ExistingEvent_WithNonExistingOrganizerId_ShouldReturnBadRequest()
+        {
+            var dto = new EventUpdateDto { OrganizerId = 9999 };
+
+            var result = await _controller.Update(1, dto);
+
+            var badRequest = Assert.IsType<BadRequestObjectResult>(result);
+            Assert.Contains("9999", badRequest.Value!.ToString());
+        }
+
+        [Fact]
+        public async Task Update_InvalidDto_ShouldReturnBadRequest()
+        {
+            var dto = new EventUpdateDto { Title = "" };
+
+            _updateValidatorMock
+                .Setup(v => v.ValidateAsync(dto, default))
+                .ReturnsAsync(new ValidationResult(new[]
+                {
+                    new ValidationFailure("Title", "Title cannot be empty if provided.")
+                }));
+
+            var result = await _controller.Update(1, dto);
+
+            Assert.IsType<BadRequestObjectResult>(result);
+        }
+
+        [Fact]
+        public async Task Update_NonExistingEvent_ShouldReturnNotFound()
+        {
+            var dto = new EventUpdateDto { Title = "Ghost" };
+
+            var result = await _controller.Update(9999, dto);
 
             Assert.IsType<NotFoundResult>(result);
         }
 
-        [Fact]
-        public async Task Update_DuplicateEmailOnAnotherOrganizer_ShouldReturnConflict()
-        {
-            // Organizer 2 has email "info@music.com" — try to assign it to organizer 1
-            var dto = new OrganizerUpdateDto
-            {
-                Name = "Tech Corp",
-                Email = "info@music.com",
-                Phone = "111"
-            };
-
-            var result = await _controller.Update(1, dto);
-
-            Assert.IsType<ConflictObjectResult>(result);
-        }
-
-
         // ── Delete ─────────────────────────────────────────────────────────────
 
         [Fact]
-        public async Task Delete_WhenOrganizerExists_ShouldRemoveFromDbAndReturnNoContent()
+        public async Task Delete_WhenEventExists_ShouldRemoveFromDbAndReturnNoContent()
         {
-            var org = new Organizer
+            var ev = new ApiApp.Models.Event
             {
                 Id = 50,
-                Name = "To Delete",
-                Email = "del@test.com",
-                Phone = "000",
-                LogoUrl = "logos/del.png"
+                Title = "To Delete",
+                Date = DateTime.UtcNow.AddMonths(1),
+                Location = "Temp",
+                OrganizerId = 1,
+                BannerImageUrl = "banners/delete.png"
             };
-            _context.Organizers.Add(org);
+            _context.Events.Add(ev);
             await _context.SaveChangesAsync();
 
             var result = await _controller.Delete(50);
 
             Assert.IsType<NoContentResult>(result);
-            Assert.Null(await _context.Organizers.FindAsync(50));
-            _fileServiceMock.Verify(f => f.DeleteFile("logos/del.png"), Times.Once);
+            Assert.Null(await _context.Events.FindAsync(50));
+            _fileServiceMock.Verify(f => f.DeleteFile("banners/delete.png"), Times.Once);
         }
 
         [Fact]
-        public async Task Delete_WhenOrganizerDoesNotExist_ShouldReturnNotFound()
+        public async Task Delete_WhenEventDoesNotExist_ShouldReturnNotFound()
         {
-            var result = await _controller.Delete(999);
+            var result = await _controller.Delete(9999);
 
             Assert.IsType<NotFoundResult>(result);
         }
 
         [Fact]
-        public async Task Delete_OrganizerWithNullLogo_ShouldCallDeleteFileWithNull()
+        public async Task Delete_EventWithNullBanner_ShouldCallDeleteFileWithNull()
         {
-            var org = new Organizer
+            var ev = new ApiApp.Models.Event
             {
                 Id = 51,
-                Name = "No Logo Org",
-                Email = "nolog@test.com",
-                LogoUrl = null
+                Title = "No Banner",
+                Date = DateTime.UtcNow.AddMonths(1),
+                Location = "Somewhere",
+                OrganizerId = 1,
+                BannerImageUrl = null
             };
-            _context.Organizers.Add(org);
+            _context.Events.Add(ev);
             await _context.SaveChangesAsync();
 
             await _controller.Delete(51);
@@ -251,82 +336,105 @@ namespace Event.Tests.Controllers
             _fileServiceMock.Verify(f => f.DeleteFile(null), Times.Once);
         }
 
-        // ── UploadLogo ─────────────────────────────────────────────────────────
+        // ── UploadBanner ───────────────────────────────────────────────────────
 
         [Fact]
-        public async Task UploadLogo_ValidFile_ShouldReturnOkAndUpdateLogoUrl()
+        public async Task UploadBanner_ValidFile_ShouldReturnOkAndUpdateBannerUrl()
         {
-            const string newUrl = "logos/new.png";
+            const string newUrl = "banners/new.png";
             _fileServiceMock
-                .Setup(f => f.SaveFileAsync(It.IsAny<IFormFile>(), "logos"))
+                .Setup(f => f.SaveFileAsync(It.IsAny<IFormFile>(), "banners"))
                 .ReturnsAsync(newUrl);
 
-            var logoMock = new Mock<IFormFile>();
-            logoMock.Setup(f => f.Length).Returns(2048);
+            var bannerMock = new Mock<IFormFile>();
+            bannerMock.Setup(f => f.Length).Returns(2048);
 
-            var result = await _controller.UploadLogo(1, logoMock.Object);
+            var result = await _controller.UploadBanner(1, bannerMock.Object);
 
-            Assert.IsType<OkResult>(result);
-            var org = await _context.Organizers.FindAsync(1);
-            Assert.Equal(newUrl, org!.LogoUrl);
+            Assert.IsType<OkObjectResult>(result);
+            var ev = await _context.Events.FindAsync(1);
+            Assert.Equal(newUrl, ev!.BannerImageUrl);
         }
 
         [Fact]
-        public async Task UploadLogo_NullFile_ShouldReturnBadRequest()
+        public async Task UploadBanner_NullFile_ShouldReturnBadRequest()
         {
-            var result = await _controller.UploadLogo(1, null!);
+            var result = await _controller.UploadBanner(1, null!);
 
             Assert.IsType<BadRequestObjectResult>(result);
         }
 
         [Fact]
-        public async Task UploadLogo_NonExistingOrganizer_ShouldReturnNotFound()
+        public async Task UploadBanner_ZeroLengthFile_ShouldReturnBadRequest()
         {
-            var logoMock = new Mock<IFormFile>();
-            logoMock.Setup(f => f.Length).Returns(512);
+            var bannerMock = new Mock<IFormFile>();
+            bannerMock.Setup(f => f.Length).Returns(0);
 
-            var result = await _controller.UploadLogo(9999, logoMock.Object);
+            var result = await _controller.UploadBanner(1, bannerMock.Object);
+
+            Assert.IsType<BadRequestObjectResult>(result);
+        }
+
+        [Fact]
+        public async Task UploadBanner_NonExistingEvent_ShouldReturnNotFound()
+        {
+            var bannerMock = new Mock<IFormFile>();
+            bannerMock.Setup(f => f.Length).Returns(1024);
+
+            var result = await _controller.UploadBanner(9999, bannerMock.Object);
 
             Assert.IsType<NotFoundResult>(result);
         }
 
-        // ── GetEvents ──────────────────────────────────────────────────────────
+        // ── GetTickets ─────────────────────────────────────────────────────────
 
         [Fact]
-        public async Task GetEvents_ExistingOrganizer_ShouldReturnOk()
+        public async Task GetTickets_ExistingEvent_ShouldReturnOk()
         {
-            var result = await _controller.GetEvents(1);
+            var result = await _controller.GetTickets(1);
 
-            Assert.IsType<OkResult>(result);
+            Assert.IsType<OkObjectResult>(result);
         }
 
         [Fact]
-        public async Task GetEvents_NonExistingOrganizer_ShouldReturnNotFound()
+        public async Task GetTickets_NonExistingEvent_ShouldReturnNotFound()
         {
-            var result = await _controller.GetEvents(9999);
+            var result = await _controller.GetTickets(9999);
+
+            Assert.IsType<NotFoundObjectResult>(result);
+        }
+
+        // ── GetOrganizer ───────────────────────────────────────────────────────
+
+        [Fact]
+        public async Task GetOrganizer_ExistingEvent_ShouldReturnOk()
+        {
+            var result = await _controller.GetOrganizer(1);
+
+            Assert.IsType<OkObjectResult>(result);
+        }
+
+        [Fact]
+        public async Task GetOrganizer_NonExistingEvent_ShouldReturnNotFound()
+        {
+            var result = await _controller.GetOrganizer(9999);
 
             Assert.IsType<NotFoundObjectResult>(result);
         }
 
         // ── Helper ─────────────────────────────────────────────────────────────
 
-        private OrganizersController CreateController(ApiApp.Data.ApiAppDbContext ctx)
+        private EventsController CreateController(ApiAppDbContext ctx)
         {
-            var cv = new Mock<IValidator<OrganizerCreateDto>>();
-            cv.Setup(v => v.ValidateAsync(It.IsAny<OrganizerCreateDto>(), default))
+            var cv = new Mock<IValidator<EventCreateDto>>();
+            cv.Setup(v => v.ValidateAsync(It.IsAny<EventCreateDto>(), default))
               .ReturnsAsync(new ValidationResult());
 
-            var uv = new Mock<IValidator<OrganizerUpdateDto>>();
-            uv.Setup(v => v.ValidateAsync(It.IsAny<OrganizerUpdateDto>(), default))
+            var uv = new Mock<IValidator<EventUpdateDto>>();
+            uv.Setup(v => v.ValidateAsync(It.IsAny<EventUpdateDto>(), default))
               .ReturnsAsync(new ValidationResult());
 
-            return new OrganizersController(
-                ctx,
-                _mapperMock.Object,
-                _fileServiceMock.Object,
-                cv.Object,
-                uv.Object
-            );
+            return new EventsController(ctx, _mapperMock.Object, _fileServiceMock.Object, cv.Object, uv.Object);
         }
     }
 }

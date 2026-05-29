@@ -6,7 +6,7 @@ namespace ApiApp.API.Services
     public class EmailService (IConfiguration _config)
     {
 
-        public virtual async Task SendEmailAsync(string toEmail, string subject, string body)
+        public async Task SendEmailAsync(string toEmail, string subject, string body)
         {
             var email = new MimeMessage();
             email.From.Add(MailboxAddress.Parse(_config["Email:From"]));

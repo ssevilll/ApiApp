@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\razdel c\\Desktop\\TicketApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\organizerscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\organizerscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\ticketscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\ticketscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -53,10 +77,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,10 +91,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,10 +149,6 @@
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\organizerdtos\\organizerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\data\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\data\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -184,6 +196,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AccountControllerTests.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\AccountControllerTests.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\AccountControllerTests.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\AccountControllerTests.cs",
+              "RelativeToolTip": "Event.Tests\\AccountControllerTests.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:40:11.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TicketsControllerTests.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\TicketsControllerTests.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\TicketsControllerTests.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\TicketsControllerTests.cs",
+              "RelativeToolTip": "Event.Tests\\TicketsControllerTests.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAmwDIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:36:39.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "OrganizersController.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\OrganizersController.cs",
               "RelativeDocumentMoniker": "ApiApp\\Controllers\\OrganizersController.cs",
@@ -196,43 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Profile\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Profile\\MappingProfile.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Profile\\MappingProfile.cs",
-              "RelativeToolTip": "ApiApp\\Profile\\MappingProfile.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T08:33:00.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TicketsController.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\TicketsController.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Controllers\\TicketsController.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\TicketsController.cs",
-              "RelativeToolTip": "ApiApp\\Controllers\\TicketsController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwE0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T13:47:04.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.AspNetUsers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-29T11:01:49.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "EventUpdateDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
@@ -240,50 +242,45 @@
               "RelativeToolTip": "ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T07:00:58.071Z",
+              "WhenOpened": "2026-05-24T07:00:58.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmailServices.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\EmailServices.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Services\\EmailServices.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\EmailServices.cs",
+              "RelativeToolTip": "ApiApp\\Services\\EmailServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T05:41:37.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EventsController.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\EventsController.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Controllers\\EventsController.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\EventsController.cs",
-              "RelativeToolTip": "ApiApp\\Controllers\\EventsController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAwwJQAAAAeAAAAAAAAAA==",
+              "Title": "JWTService.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\JWTService.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Services\\JWTService.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\JWTService.cs",
+              "RelativeToolTip": "ApiApp\\Services\\JWTService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAABwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T07:04:20.568Z",
+              "WhenOpened": "2026-05-24T06:50:20.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.Events [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Events.sql",
-              "ToolTip": "dbo.Events [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-29T12:04:37.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "dbo.Organizers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Organizers.sql",
-              "ToolTip": "dbo.Organizers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-29T12:04:07.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "dbo.Tickets [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Tickets.sql",
-              "ToolTip": "dbo.Tickets [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-29T11:14:56.954Z",
+              "DocumentIndex": 3,
+              "Title": "OrganizersControllerTests.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\OrganizersControllerTests.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\OrganizersControllerTests.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\OrganizersControllerTests.cs",
+              "RelativeToolTip": "Event.Tests\\OrganizersControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:45:56.892Z",
               "EditorCaption": ""
             },
             {
@@ -292,7 +289,92 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Controllers\\EventsController.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "ApiApp\\Controllers\\EventsController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAwwJQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T07:04:20.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventsControllerTests.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\EventsControllerTests.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\EventsControllerTests.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\EventsControllerTests.cs",
+              "RelativeToolTip": "Event.Tests\\EventsControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T08:06:58.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "dbo.AspNetUsers.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUsers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-29T11:01:49.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Controllers\\TicketsController.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "ApiApp\\Controllers\\TicketsController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwE0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T13:47:04.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Profile\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Profile\\MappingProfile.cs",
+              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Profile\\MappingProfile.cs",
+              "RelativeToolTip": "ApiApp\\Profile\\MappingProfile.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAlwBkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T08:33:00.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "dbo.Events.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Events.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Events.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-29T12:04:37.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dbo.Organizers.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Organizers.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Organizers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-29T12:04:07.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dbo.Tickets.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Tickets.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Tickets.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-29T11:14:56.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "ApiApp\\Controllers\\AccountController.cs",
@@ -300,12 +382,11 @@
               "RelativeToolTip": "ApiApp\\Controllers\\AccountController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAEwEIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T16:46:04.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T16:46:04.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "ApiAppDbContext.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\ApiAppDbContext.cs",
               "RelativeDocumentMoniker": "ApiApp\\Data\\ApiAppDbContext.cs",
@@ -313,12 +394,11 @@
               "RelativeToolTip": "ApiApp\\Data\\ApiAppDbContext.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAgwDcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T07:05:21.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T07:05:21.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ApiApp\\appsettings.Development.json",
@@ -326,44 +406,29 @@
               "RelativeToolTip": "ApiApp\\appsettings.Development.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-02T07:08:03.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T07:08:03.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "dbo.AspNetUserRoles [Data]",
+              "DocumentIndex": 19,
+              "Title": "dbo.AspNetUserRoles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUserRoles.sql",
-              "ToolTip": "dbo.AspNetUserRoles [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUserRoles.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-29T11:05:19.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T11:05:19.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "dbo.AspNetRoles [Data]",
+              "DocumentIndex": 18,
+              "Title": "dbo.AspNetRoles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetRoles.sql",
-              "ToolTip": "dbo.AspNetRoles [Data]",
+              "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetRoles.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-05-29T11:05:26.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T11:05:26.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "JWTService.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\JWTService.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Services\\JWTService.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\JWTService.cs",
-              "RelativeToolTip": "ApiApp\\Services\\JWTService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T06:50:20.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "EventCreateDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
@@ -375,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "ApiApp\\ServiceRegistration.cs",
@@ -387,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "ApiApp.csproj",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ApiApp.csproj",
               "RelativeDocumentMoniker": "ApiApp\\ApiApp.csproj",
@@ -395,24 +460,11 @@
               "RelativeToolTip": "ApiApp\\ApiApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-02T08:30:12.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T08:30:12.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EventsControllerTests.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\EventsControllerTests.cs",
-              "RelativeDocumentMoniker": "Event.Tests\\EventsControllerTests.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\EventsControllerTests.cs",
-              "RelativeToolTip": "Event.Tests\\EventsControllerTests.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCIBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T08:06:58.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Helpers.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\Helpers.cs",
               "RelativeDocumentMoniker": "Event.Tests\\Helpers.cs",
@@ -424,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "RefreshTokenDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
@@ -436,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\AppUser.cs",
@@ -448,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "Event.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Event.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Event.cs",
@@ -460,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "FileService.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "ApiApp\\Services\\FileService.cs",
@@ -472,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "OrganizerCreateDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
@@ -484,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "ResetPasswordDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
@@ -496,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "ForgotPasswordDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
@@ -508,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "EmailConfirmDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
@@ -520,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
@@ -532,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "TicketUpdateDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
@@ -544,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "TicketCreateDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
@@ -556,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "OrganizerUpdateDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
@@ -568,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
@@ -580,19 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "EmailServices.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\EmailServices.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Services\\EmailServices.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\EmailServices.cs",
-              "RelativeToolTip": "ApiApp\\Services\\EmailServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T05:41:37.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Program.cs",
               "RelativeDocumentMoniker": "ApiApp\\Program.cs",
@@ -604,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "EventConfiguration.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\Configurations\\EventConfiguration.cs",
               "RelativeDocumentMoniker": "ApiApp\\Data\\Configurations\\EventConfiguration.cs",
@@ -616,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "IFileService.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Interfaces\\IFileService.cs",
               "RelativeDocumentMoniker": "ApiApp\\Interfaces\\IFileService.cs",
@@ -628,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "dbo.Organizers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventApiAppDb/True/SqlTable/dbo.Organizers.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventApiAppDb/True/SqlTable/dbo.Organizers.sql",
@@ -637,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "OrganizerConfiguration.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
               "RelativeDocumentMoniker": "ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
@@ -649,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Common\\BaseEntity.cs",
@@ -661,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ApiApp\\Properties\\launchSettings.json",
@@ -673,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "Ticket.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Ticket.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Ticket.cs",
@@ -685,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Organizer.cs",
               "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Organizer.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Organizer.cs",
