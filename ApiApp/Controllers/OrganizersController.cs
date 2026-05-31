@@ -1,6 +1,7 @@
 using ApiApp.Data;
 using ApiApp.DTOs.EventDtos;
 using ApiApp.DTOs.OrganizerDtos;
+using ApiApp.Helpers;
 using ApiApp.Interfaces;
 using ApiApp.Models;
 using ApiApp.Services;
@@ -26,29 +27,34 @@ namespace ApiApp.Controllers
         {
             var organizers = await _context.Organizers.ToListAsync();
             var response = _mapper.Map<List<OrganizerResponseDto>>(organizers);
-            return Ok(response);
+            return Ok(ResponseModelHelper.CreateSuccessResponse(response));
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var organizer = await _context.Organizers.FindAsync(id);
-            if (organizer == null) return NotFound();
+            if (organizer == null)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Organizer with Id {id} was not found."));
+
             var response = _mapper.Map<OrganizerResponseDto>(organizer);
-            return Ok(response);
+            return Ok(ResponseModelHelper.CreateSuccessResponse(response));
         }
 
         [HttpPost]
-        [Authorize(Roles ="admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create([FromForm] OrganizerCreateDto dto)
         {
             var validation = await _createValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(validation.Errors.Select(e => e.ErrorMessage));
+            {
+                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+            }
 
             var emailInUse = await _context.Organizers.AnyAsync(o => o.Email == dto.Email);
             if (emailInUse)
-                return Conflict("An organizer with this email already exists.");
+                return Conflict(ResponseModelHelper.CreateConflictResponse<string>("An organizer with this email already exists."));
 
             var organizer = _mapper.Map<Organizer>(dto);
 
@@ -60,66 +66,78 @@ namespace ApiApp.Controllers
             _context.Organizers.Add(organizer);
             await _context.SaveChangesAsync();
 
-            return Ok("Organizer created successfully.");
+            var responseData = new { Message = "Organizer created successfully." };
+            return Ok(ResponseModelHelper.CreateSuccessResponse(responseData));
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles ="admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Update(int id, OrganizerUpdateDto dto)
         {
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(validation.Errors.Select(e => e.ErrorMessage));
+            {
+                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+            }
 
             var organizer = await _context.Organizers.FindAsync(id);
-            if (organizer == null) return NotFound();
+            if (organizer == null)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Organizer with Id {id} was not found."));
 
             var emailInUse = await _context.Organizers
                 .AnyAsync(o => o.Email == dto.Email && o.Id != id);
             if (emailInUse)
-                return Conflict("Another organizer with this email already exists.");
+                return Conflict(ResponseModelHelper.CreateConflictResponse<string>("Another organizer with this email already exists."));
 
             _mapper.Map(dto, organizer);
             await _context.SaveChangesAsync();
 
-            return Ok("Organizer updated successfully.");
+            var responseData = new { Message = "Organizer updated successfully." };
+            return Ok(ResponseModelHelper.CreateSuccessResponse(responseData));
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles ="admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var organizer = await _context.Organizers.FindAsync(id);
-            if (organizer == null) return NotFound();
+            if (organizer == null)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Organizer with Id {id} was not found."));
 
             _fileService.DeleteFile(organizer.LogoUrl);
             _context.Organizers.Remove(organizer);
             await _context.SaveChangesAsync();
-            return NoContent();
+
+            var responseData = new { Message = $"Organizer {id} was deleted successfully." };
+            return Ok(ResponseModelHelper.CreateSuccessResponse(responseData));
         }
 
         [HttpPost("{id}/logo")]
-        [Authorize(Roles ="admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> UploadLogo(int id, IFormFile logo)
         {
             if (logo == null || logo.Length == 0)
-                return BadRequest("No file uploaded.");
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<string>("No file uploaded."));
 
             var organizer = await _context.Organizers.FindAsync(id);
-            if (organizer == null) return NotFound();
+            if (organizer == null)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Organizer with Id {id} was not found."));
 
             _fileService.DeleteFile(organizer.LogoUrl);
             organizer.LogoUrl = await _fileService.SaveFileAsync(logo, "logos");
             await _context.SaveChangesAsync();
 
-            return Ok("Logo uploaded successfully." );
+            var responseData = new { Message = "Logo uploaded successfully." };
+            return Ok(ResponseModelHelper.CreateSuccessResponse(responseData));
         }
 
         [HttpGet("{organizerId}/events")]
         public async Task<IActionResult> GetEvents(int organizerId)
         {
             var organizerExists = await _context.Organizers.AnyAsync(o => o.Id == organizerId);
-            if (!organizerExists) return NotFound($"Organizer {organizerId} not found.");
+            if (!organizerExists)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Organizer {organizerId} not found."));
 
             var events = await _context.Events
                 .Include(e => e.Organizer)
@@ -127,7 +145,7 @@ namespace ApiApp.Controllers
                 .ToListAsync();
 
             var response = _mapper.Map<List<EventResponseDto>>(events);
-            return Ok(response);
+            return Ok(ResponseModelHelper.CreateSuccessResponse(response));
         }
     }
 }

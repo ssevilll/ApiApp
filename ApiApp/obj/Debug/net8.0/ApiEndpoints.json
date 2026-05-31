@@ -223,7 +223,7 @@
     "ContainingType": "ApiApp.Controllers.EventsController",
     "Method": "Update",
     "RelativePath": "api/Events/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [

@@ -1,52 +1,84 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\razdel c\\Desktop\\TicketApi\\",
+  "WorkspaceRootPath": "C:\\Users\\sevilsb\\Desktop\\EventApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\organizerscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\organizerscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\ticketscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\ticketscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\helpers\\responsemodelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\helpers\\responsemodelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\eventscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\event.tests\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\data\\apiappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\data\\apiappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\organizerdtos\\organizerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\organizerdtos\\organizerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\event.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\emailservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\event.tests\\organizerscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\organizerscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\event.tests\\ticketscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\ticketscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\profile\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\profile\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\profile\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\eventdtos\\eventupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\eventdtos\\eventupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\eventdtos\\eventupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -56,18 +88,10 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Organizers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\data\\apiappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\data\\apiappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Tickets.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
@@ -77,106 +101,94 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUserRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\apiapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\apiapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\apiapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\eventdtos\\eventcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\eventdtos\\eventcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\eventdtos\\eventcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|d:\\razdel c\\desktop\\ticketapi\\event.tests\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9418695C-E32D-47DD-940C-8368CAA8E134}|Event.Tests\\Event.Tests.csproj|solutionrelative:event.tests\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\userdtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\userdtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\userdtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\organizerdtos\\organizercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\organizerdtos\\organizercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\organizerdtos\\organizercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\userdtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\userdtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\userdtos\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\userdtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\userdtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\userdtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\userdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\userdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\userdtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\userdtos\\emailconfirmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\userdtos\\emailconfirmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\userdtos\\emailconfirmdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\userdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\userdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\userdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\ticketdtos\\ticketupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\ticketdtos\\ticketupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\ticketdtos\\ticketupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\ticketdtos\\ticketcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\dtos\\ticketdtos\\ticketcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\ticketdtos\\ticketcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\dtos\\organizerdtos\\organizerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\dtos\\organizerdtos\\organizerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\data\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\data\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\data\\configurations\\eventconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\interfaces\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventApiAppDb/True/SqlTable/dbo.Organizers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\data\\configurations\\organizerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\data\\configurations\\organizerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\data\\configurations\\organizerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\models\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\models\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\models\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|d:\\razdel c\\desktop\\ticketapi\\apiapp\\models\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|c:\\users\\sevilsb\\desktop\\eventapi\\apiapp\\models\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD079095-E10C-49C8-BDE2-5E4B918E2E28}|ApiApp\\ApiApp.csproj|solutionrelative:apiapp\\models\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -187,7 +199,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 116,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -195,50 +207,190 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountControllerTests.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\AccountControllerTests.cs",
-              "RelativeDocumentMoniker": "Event.Tests\\AccountControllerTests.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\AccountControllerTests.cs",
-              "RelativeToolTip": "Event.Tests\\AccountControllerTests.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwDAAAABAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ResponseModelHelper.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Helpers\\ResponseModelHelper.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Helpers\\ResponseModelHelper.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Helpers\\ResponseModelHelper.cs",
+              "RelativeToolTip": "ApiApp\\Helpers\\ResponseModelHelper.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T12:40:11.398Z",
+              "WhenOpened": "2026-05-31T09:44:14.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TicketsControllerTests.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\TicketsControllerTests.cs",
-              "RelativeDocumentMoniker": "Event.Tests\\TicketsControllerTests.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\TicketsControllerTests.cs",
-              "RelativeToolTip": "Event.Tests\\TicketsControllerTests.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAmwDIAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\EventsController.cs*",
+              "RelativeToolTip": "ApiApp\\Controllers\\EventsController.cs*",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAqwKoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T12:36:39.648Z",
+              "WhenOpened": "2026-05-02T07:04:20.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "ApiApp\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAALsAAAAAAAAAAAAqwNcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T16:46:04.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\Helpers.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\Helpers.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\Helpers.cs",
+              "RelativeToolTip": "Event.Tests\\Helpers.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T08:19:36.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\EventsControllerTests.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\EventsControllerTests.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\EventsControllerTests.cs",
+              "RelativeToolTip": "Event.Tests\\EventsControllerTests.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwJ4BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T08:06:58.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OrganizersController.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\OrganizersController.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\OrganizersController.cs",
               "RelativeDocumentMoniker": "ApiApp\\Controllers\\OrganizersController.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\OrganizersController.cs",
-              "RelativeToolTip": "ApiApp\\Controllers\\OrganizersController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAAAFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\OrganizersController.cs*",
+              "RelativeToolTip": "ApiApp\\Controllers\\OrganizersController.cs*",
+              "ViewState": "AgIAAIwAAAAAu7u7u7sewJYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-23T13:46:42.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Controllers\\TicketsController.cs*",
+              "RelativeToolTip": "ApiApp\\Controllers\\TicketsController.cs*",
+              "ViewState": "AgIAADcAAAAAAAAAAAAiwEEAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T13:47:04.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Program.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Program.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Program.cs",
+              "RelativeToolTip": "ApiApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T07:07:26.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "ApiApp\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "ApiApp\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T09:45:51.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\ResponseModel.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Models\\ResponseModel.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\ResponseModel.cs",
+              "RelativeToolTip": "ApiApp\\Models\\ResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T09:42:03.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApiAppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Data\\ApiAppDbContext.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Data\\ApiAppDbContext.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Data\\ApiAppDbContext.cs",
+              "RelativeToolTip": "ApiApp\\Data\\ApiAppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T07:05:21.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "OrganizerUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
+              "RelativeDocumentMoniker": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
+              "RelativeToolTip": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T07:01:50.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\AccountControllerTests.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\AccountControllerTests.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\AccountControllerTests.cs",
+              "RelativeToolTip": "Event.Tests\\AccountControllerTests.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T12:40:11.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmailServices.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Services\\EmailServices.cs",
+              "RelativeDocumentMoniker": "ApiApp\\Services\\EmailServices.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Services\\EmailServices.cs",
+              "RelativeToolTip": "ApiApp\\Services\\EmailServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-24T05:41:37.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "EventUpdateDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\EventDtos\\EventUpdateDto.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -246,75 +398,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmailServices.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\EmailServices.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Services\\EmailServices.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\EmailServices.cs",
-              "RelativeToolTip": "ApiApp\\Services\\EmailServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "TicketsControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\TicketsControllerTests.cs",
+              "RelativeDocumentMoniker": "Event.Tests\\TicketsControllerTests.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\TicketsControllerTests.cs",
+              "RelativeToolTip": "Event.Tests\\TicketsControllerTests.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAmwDIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T05:41:37.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T12:36:39.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "JWTService.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\JWTService.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Services\\JWTService.cs",
               "RelativeDocumentMoniker": "ApiApp\\Services\\JWTService.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\JWTService.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Services\\JWTService.cs",
               "RelativeToolTip": "ApiApp\\Services\\JWTService.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAAABwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T06:50:20.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-24T06:50:20.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "OrganizersControllerTests.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\OrganizersControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\OrganizersControllerTests.cs",
               "RelativeDocumentMoniker": "Event.Tests\\OrganizersControllerTests.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\OrganizersControllerTests.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\Event.Tests\\OrganizersControllerTests.cs",
               "RelativeToolTip": "Event.Tests\\OrganizersControllerTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAMoBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T12:45:56.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "WhenOpened": "2026-05-29T12:45:56.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EventsController.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\EventsController.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Controllers\\EventsController.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\EventsController.cs",
-              "RelativeToolTip": "ApiApp\\Controllers\\EventsController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAwwJQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T07:04:20.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventsControllerTests.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\EventsControllerTests.cs",
-              "RelativeDocumentMoniker": "Event.Tests\\EventsControllerTests.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\EventsControllerTests.cs",
-              "RelativeToolTip": "Event.Tests\\EventsControllerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4BAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T08:06:58.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "dbo.AspNetUsers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUsers.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUsers.sql",
@@ -323,23 +443,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TicketsController.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\TicketsController.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Controllers\\TicketsController.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\TicketsController.cs",
-              "RelativeToolTip": "ApiApp\\Controllers\\TicketsController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAkwE0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T13:47:04.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Profile\\MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Profile\\MappingProfile.cs",
               "RelativeDocumentMoniker": "ApiApp\\Profile\\MappingProfile.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Profile\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Profile\\MappingProfile.cs",
               "RelativeToolTip": "ApiApp\\Profile\\MappingProfile.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAlwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -347,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "dbo.Events.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Events.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Events.sql",
@@ -356,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "dbo.Organizers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Organizers.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Organizers.sql",
@@ -365,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "dbo.Tickets.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Tickets.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.Tickets.sql",
@@ -374,35 +482,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ApiApp\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAEwEIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T16:46:04.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ApiAppDbContext.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\ApiAppDbContext.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Data\\ApiAppDbContext.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\ApiAppDbContext.cs",
-              "RelativeToolTip": "ApiApp\\Data\\ApiAppDbContext.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwDcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T07:05:21.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ApiApp\\appsettings.Development.json",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\appsettings.Development.json",
               "RelativeToolTip": "ApiApp\\appsettings.Development.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -410,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "dbo.AspNetUserRoles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUserRoles.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetUserRoles.sql",
@@ -419,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "dbo.AspNetRoles.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetRoles.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventOrganizationApiAppDb/True/SqlTable/dbo.AspNetRoles.sql",
@@ -428,11 +512,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "EventCreateDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\EventDtos\\EventCreateDto.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -440,11 +524,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "ApiApp\\ServiceRegistration.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ServiceRegistration.cs",
               "RelativeToolTip": "ApiApp\\ServiceRegistration.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAgwFMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -452,35 +536,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "ApiApp.csproj",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ApiApp.csproj",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ApiApp.csproj",
               "RelativeDocumentMoniker": "ApiApp\\ApiApp.csproj",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\ApiApp.csproj",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\ApiApp.csproj",
               "RelativeToolTip": "ApiApp\\ApiApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-02T08:30:12.64Z"
+              "WhenOpened": "2026-05-02T08:30:12.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Helpers.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\Helpers.cs",
-              "RelativeDocumentMoniker": "Event.Tests\\Helpers.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\Event.Tests\\Helpers.cs",
-              "RelativeToolTip": "Event.Tests\\Helpers.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T08:19:36.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "RefreshTokenDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\UserDtos\\RefreshTokenDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -488,11 +561,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\AppUser.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\AppUser.cs",
               "RelativeToolTip": "ApiApp\\Models\\AppUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -500,11 +573,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Event.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Event.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Event.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Event.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Event.cs",
               "RelativeToolTip": "ApiApp\\Models\\Event.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -512,11 +585,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "FileService.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\FileService.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "ApiApp\\Services\\FileService.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Services\\FileService.cs",
               "RelativeToolTip": "ApiApp\\Services\\FileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -524,11 +597,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "OrganizerCreateDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerCreateDto.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAIAywB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -536,11 +609,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "ResetPasswordDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\UserDtos\\ResetPasswordDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -548,11 +621,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "ForgotPasswordDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\UserDtos\\ForgotPasswordDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -560,11 +633,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "EmailConfirmDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\UserDtos\\EmailConfirmDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -572,11 +645,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "LoginDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\UserDtos\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -584,11 +657,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "TicketUpdateDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\TicketDtos\\TicketUpdateDto.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAA7wAsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -596,11 +669,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "TicketCreateDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\TicketDtos\\TicketCreateDto.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAADwvwwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -608,23 +681,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "OrganizerUpdateDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
-              "RelativeDocumentMoniker": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
-              "RelativeToolTip": "ApiApp\\DTOs\\OrganizerDtos\\OrganizerUpdateDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvwsAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-24T07:01:50.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "RegisterDto.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
               "RelativeDocumentMoniker": "ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
               "RelativeToolTip": "ApiApp\\DTOs\\UserDtos\\RegisterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -632,23 +693,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Program.cs",
-              "RelativeDocumentMoniker": "ApiApp\\Program.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Program.cs",
-              "RelativeToolTip": "ApiApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T07:07:26.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "EventConfiguration.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\Configurations\\EventConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Data\\Configurations\\EventConfiguration.cs",
               "RelativeDocumentMoniker": "ApiApp\\Data\\Configurations\\EventConfiguration.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\Configurations\\EventConfiguration.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Data\\Configurations\\EventConfiguration.cs",
               "RelativeToolTip": "ApiApp\\Data\\Configurations\\EventConfiguration.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAqwB4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -656,11 +705,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "IFileService.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Interfaces\\IFileService.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Interfaces\\IFileService.cs",
               "RelativeDocumentMoniker": "ApiApp\\Interfaces\\IFileService.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Interfaces\\IFileService.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Interfaces\\IFileService.cs",
               "RelativeToolTip": "ApiApp\\Interfaces\\IFileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -668,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "dbo.Organizers.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventApiAppDb/True/SqlTable/dbo.Organizers.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/DESKTOP_NBRJ2GD_SQLEXPRESS/EventApiAppDb/True/SqlTable/dbo.Organizers.sql",
@@ -677,11 +726,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "OrganizerConfiguration.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
               "RelativeDocumentMoniker": "ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
               "RelativeToolTip": "ApiApp\\Data\\Configurations\\OrganizerConfiguration.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAewBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -689,11 +738,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Common\\BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Common\\BaseEntity.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Common\\BaseEntity.cs",
               "RelativeToolTip": "ApiApp\\Models\\Common\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -701,11 +750,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ApiApp\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Properties\\launchSettings.json",
               "RelativeToolTip": "ApiApp\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -713,11 +762,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "Ticket.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Ticket.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Ticket.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Ticket.cs",
               "RelativeToolTip": "ApiApp\\Models\\Ticket.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -725,11 +774,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "Organizer.cs",
-              "DocumentMoniker": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Organizer.cs",
+              "DocumentMoniker": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Organizer.cs",
               "RelativeDocumentMoniker": "ApiApp\\Models\\Organizer.cs",
-              "ToolTip": "D:\\razdel c\\Desktop\\TicketApi\\ApiApp\\Models\\Organizer.cs",
+              "ToolTip": "C:\\Users\\sevilsb\\Desktop\\EventApi\\ApiApp\\Models\\Organizer.cs",
               "RelativeToolTip": "ApiApp\\Models\\Organizer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

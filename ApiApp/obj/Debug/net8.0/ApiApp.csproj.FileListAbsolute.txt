@@ -292,13 +292,6 @@ C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.build.
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ApiApp.csproj.Up2Date
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ApiApp.genruntimeconfig.cache
 C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\ref\ApiApp.dll
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiApp.props
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiApp.props
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiApp.props
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\razdel c\Desktop\TicketApi\ApiApp\bin\Debug\net8.0\appsettings.Development.json
 D:\razdel c\Desktop\TicketApi\ApiApp\bin\Debug\net8.0\appsettings.json
 D:\razdel c\Desktop\TicketApi\ApiApp\bin\Debug\net8.0\ApiApp.staticwebassets.runtime.json
@@ -453,3 +446,10 @@ D:\razdel c\Desktop\TicketApi\ApiApp\obj\Debug\net8.0\ApiApp.pdb
 D:\razdel c\Desktop\TicketApi\ApiApp\obj\Debug\net8.0\ApiApp.genruntimeconfig.cache
 D:\razdel c\Desktop\TicketApi\ApiApp\obj\Debug\net8.0\ref\ApiApp.dll
 D:\razdel c\Desktop\TicketApi\ApiApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.ApiApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiApp.props
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiApp.props
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiApp.props
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\sevilsb\Desktop\EventApi\ApiApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -1,6 +1,7 @@
 using ApiApp.Data;
 using ApiApp.DTOs.EventDtos;
 using ApiApp.DTOs.TicketDtos;
+using ApiApp.Helpers;
 using ApiApp.Models;
 using AutoMapper;
 using FluentValidation;
@@ -23,10 +24,10 @@ namespace ApiApp.Controllers
         public async Task<IActionResult> GetAll()
         {
             var tickets = await _context.Tickets
-            .Include(t => t.Event)
+                .Include(t => t.Event)
                 .ToListAsync();
             var response = _mapper.Map<List<TicketResponseDto>>(tickets);
-            return Ok(response);
+            return Ok(ResponseModelHelper.CreateSuccessResponse(response));
         }
 
         [HttpGet("{id}")]
@@ -35,28 +36,35 @@ namespace ApiApp.Controllers
             var ticket = await _context.Tickets
                 .Include(t => t.Event)
                 .FirstOrDefaultAsync(t => t.Id == id);
-            if (ticket == null) return NotFound();
+
+            if (ticket == null)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Ticket with Id {id} was not found."));
+
             var response = _mapper.Map<TicketResponseDto>(ticket);
-            return Ok(response);
+            return Ok(ResponseModelHelper.CreateSuccessResponse(response));
         }
 
         [HttpPost]
-        [Authorize(Roles ="admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create(TicketCreateDto dto)
         {
             var validation = await _createValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(validation.Errors.Select(e => e.ErrorMessage));
+            {
+                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+            }
 
             var eventExists = await _context.Events.AnyAsync(e => e.Id == dto.EventId);
             if (!eventExists)
-                return BadRequest($"Event with Id {dto.EventId} does not exist.");
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<string>($"Event with Id {dto.EventId} does not exist."));
 
             var ticket = _mapper.Map<Ticket>(dto);
             _context.Tickets.Add(ticket);
             await _context.SaveChangesAsync();
 
-            return Ok("Ticket created successfully." );
+            var responseData = new { Message = "Ticket created successfully." };
+            return Ok(ResponseModelHelper.CreateSuccessResponse(responseData));
         }
 
         [HttpPut("{id}")]
@@ -65,29 +73,38 @@ namespace ApiApp.Controllers
         {
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
-                return BadRequest(validation.Errors.Select(e => e.ErrorMessage));
+            {
+                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+            }
 
             var ticket = await _context.Tickets
                 .Include(t => t.Event)
                 .FirstOrDefaultAsync(t => t.Id == id);
-            if (ticket == null) return NotFound();
+
+            if (ticket == null)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Ticket with Id {id} was not found."));
 
             _mapper.Map(dto, ticket);
             await _context.SaveChangesAsync();
 
-            return Ok("Ticket updated successfully." );
+            var responseData = new { Message = "Ticket updated successfully." };
+            return Ok(ResponseModelHelper.CreateSuccessResponse(responseData));
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles ="admin")]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var ticket = await _context.Tickets.FindAsync(id);
-            if (ticket == null) return NotFound();
+            if (ticket == null)
+                return NotFound(ResponseModelHelper.CreateNotFoundResponse<string>($"Ticket with Id {id} was not found."));
 
             _context.Tickets.Remove(ticket);
             await _context.SaveChangesAsync();
-            return NoContent();
+
+            var responseData = new { Message = $"Ticket {id} was deleted successfully." };
+            return Ok(ResponseModelHelper.CreateSuccessResponse(responseData));
         }
     }
 }
