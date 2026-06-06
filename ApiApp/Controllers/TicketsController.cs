@@ -51,8 +51,8 @@ namespace ApiApp.Controllers
             var validation = await _createValidator.ValidateAsync(dto);
             if (!validation.IsValid)
             {
-                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
-                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var eventExists = await _context.Events.AnyAsync(e => e.Id == dto.EventId);
@@ -74,8 +74,8 @@ namespace ApiApp.Controllers
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
             {
-                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
-                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var ticket = await _context.Tickets

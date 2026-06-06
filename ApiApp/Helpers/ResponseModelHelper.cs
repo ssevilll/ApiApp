@@ -17,33 +17,48 @@ namespace ApiApp.Helpers
 
         public static ResponseModel<T> CreateBadRequestResponse<T>(string error)
         {
+            return CreateBadRequestResponse<T>(new List<string> { error });
+        }
+
+        public static ResponseModel<T> CreateBadRequestResponse<T>(List<string> errors)
+        {
             return new ResponseModel<T>
             {
                 Success = false,
                 StatusCode = 400,
-                Errors = new List<string> { error },
+                Errors = errors,
                 Data = default
             };
         }
 
         public static ResponseModel<T> CreateNotFoundResponse<T>(string error)
         {
+            return CreateNotFoundResponse<T>(new List<string> { error });
+        }
+
+        public static ResponseModel<T> CreateNotFoundResponse<T>(List<string> errors)
+        {
             return new ResponseModel<T>
             {
                 Success = false,
                 StatusCode = 404,
-                Errors = new List<string> { error },
+                Errors = errors,
                 Data = default
             };
         }
 
         public static ResponseModel<T> CreateConflictResponse<T>(string error)
         {
+            return CreateConflictResponse<T>(new List<string> { error });
+        }
+
+        public static ResponseModel<T> CreateConflictResponse<T>(List<string> errors)
+        {
             return new ResponseModel<T>
             {
                 Success = false,
                 StatusCode = 409,
-                Errors = new List<string> { error },
+                Errors = errors,
                 Data = default
             };
         }
@@ -57,6 +72,11 @@ namespace ApiApp.Helpers
                 Errors = errors,
                 Data = default
             };
+        }
+
+        public static ResponseModel<T> CreateErrorResponse<T>(string error)
+        {
+            return CreateErrorResponse<T>(new List<string> { error });
         }
     }
 }

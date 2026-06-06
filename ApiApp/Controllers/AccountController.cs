@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Security.Claims;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 
 namespace ApiApp.Controllers
 {
@@ -27,10 +28,11 @@ namespace ApiApp.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> RegisterAsync([FromBody] RegisterDto registerDto)
         {
-            var validationResult = registerValidator.Validate(registerDto);
-            if (!validationResult.IsValid)
+            var validation = registerValidator.Validate(registerDto);
+            if (!validation.IsValid)
             {
-                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<string>("Input is not valid."));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var user = await userManager.FindByEmailAsync(registerDto.Email);
@@ -65,11 +67,11 @@ namespace ApiApp.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> LoginAsync([FromBody] LoginDto loginDto)
         {
-            var validationResult = new LoginDtoValidator().Validate(loginDto);
-            if (!validationResult.IsValid)
+            var validation = new LoginDtoValidator().Validate(loginDto);
+            if (!validation.IsValid)
             {
-                var errors = validationResult.Errors.Select(e => e.ErrorMessage).ToList();
-                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var user = await userManager.FindByEmailAsync(loginDto.Email);

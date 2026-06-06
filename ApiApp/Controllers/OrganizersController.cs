@@ -48,8 +48,8 @@ namespace ApiApp.Controllers
             var validation = await _createValidator.ValidateAsync(dto);
             if (!validation.IsValid)
             {
-                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
-                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var emailInUse = await _context.Organizers.AnyAsync(o => o.Email == dto.Email);
@@ -77,8 +77,8 @@ namespace ApiApp.Controllers
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
             {
-                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
-                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var organizer = await _context.Organizers.FindAsync(id);

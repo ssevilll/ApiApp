@@ -17,6 +17,7 @@ using System.Text;
 using ApiApp.DTOs.EventDtos;
 using FluentValidation.AspNetCore;
 using ApiApp.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EventTicketing.API
 {
@@ -26,6 +27,10 @@ namespace EventTicketing.API
         {
             services.AddControllers();
             services.AddEndpointsApiExplorer();
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -85,6 +90,7 @@ namespace EventTicketing.API
             services.AddScoped<EmailService>();
             services.AddFluentValidationAutoValidation();
             services.AddValidatorsFromAssemblyContaining<EventCreateDtoValidator>();
+
 
             return services;
         }

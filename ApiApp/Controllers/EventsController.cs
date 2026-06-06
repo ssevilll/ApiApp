@@ -26,6 +26,7 @@ namespace ApiApp.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
+            throw new Exception("Test exception for global error handling.");
             var events = await _context.Events
                 .Include(e => e.Organizer)
                 .ToListAsync();
@@ -54,8 +55,8 @@ namespace ApiApp.Controllers
             var validation = await _createValidator.ValidateAsync(dto);
             if (!validation.IsValid)
             {
-                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
-                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var organizerExists = await _context.Organizers.AnyAsync(o => o.Id == dto.OrganizerId);
@@ -82,8 +83,8 @@ namespace ApiApp.Controllers
             var validation = await _updateValidator.ValidateAsync(dto);
             if (!validation.IsValid)
             {
-                var errors = validation.Errors.Select(e => e.ErrorMessage).ToList();
-                return BadRequest(ResponseModelHelper.CreateErrorResponse<object>(errors));
+                var error = validation.Errors.Select(e => e.ErrorMessage).ToList();
+                return BadRequest(ResponseModelHelper.CreateBadRequestResponse<object>(error));
             }
 
             var ev = await _context.Events.FindAsync(id);

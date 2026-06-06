@@ -18,4 +18,6 @@ app.UseStaticFiles();
 app.UseAuthorization();
 app.MapControllers();
 
-app.Services.GetRequiredService<AutoMapper.IMapper>().ConfigurationProvider.AssertConfigurationIsValid(); app.Run();
+app.Services.GetRequiredService<AutoMapper.IMapper>().ConfigurationProvider.AssertConfigurationIsValid();
+
+app.Run();
